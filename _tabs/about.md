@@ -14,11 +14,11 @@ Merhaba, ben Muzaffer. Harita Mühendisiyim. 2016 yılında Cibali Lisesi'ni oku
 
 ## Makale:
 
-* [Akıllı Şehirlerde Büyük Coğrafi Veri Yönetimi ve Analizi: Hava Kalitesi Örneği](https://dergipark.org.tr/tr/pub/geomatik/issue/66138/938855)
+* 	Aydınoğlu, A. Ç. , Bovkır, R. & Bulut, M. (2022). [Akıllı şehirlerde büyük coğrafi veri yönetimi ve analizi: hava kalitesi örneği](https://dergipark.org.tr/tr/pub/geomatik/issue/66138/938855) . Geomatik , 7 (3) , 174-186 . DOI: 10.29128/geomatik.938855
 
 ## Bildiri
 
-* [Calculation of Air Quality Index in NoSQL Database Environment with Big Data Analytics](https://www.youtube.com/watch?v=X_LwK2D-Clg)
+* Aydınoğlu, A. Ç. , Bovkır, R. & Bulut, M. (2022). [Calculation of Air Quality Index in NoSQL Database Environment with Big Data Analytics](https://www.youtube.com/watch?v=X_LwK2D-Clg), Spatial Data Handling for Smart Cities and Earth System, 13-14 August, Sakarya.
 
 <br>
 
@@ -31,3 +31,7 @@ Merhaba, ben Muzaffer. Harita Mühendisiyim. 2016 yılında Cibali Lisesi'ni oku
 ## Termal Isı Adalarının Tespit Edilmesi ve Şehirleşmenin Yönünün Belirlenmesi:
 
 * <div class='text-justify'>Dünya nüfusunun hızla artmasına paralel olarak artan kontrolsüz ve plansız kentleşme insan sağlığı açısından ciddi sorunlara yol açabilecek bir problem olan kentsel ısı adalarının oluşmasına sebep olmuştur. Bu çalışmada Landsat 8 görüntüleri ve python programlama dili kullanılarak İstanbul ili için kentsel ısı adaları tespit edilmiş ve 5 senelik periyotta değişim analizi yapılmıştır.</div>
+
+## Tapu Sözel Verileri Raporlama: ReporterPDF
+
+* <div class='text-justify'>Günümüzde daha yaşanılabilir kentler inşa etmek için arsa ve arazi düzenlemeleri yapılmaktadır. Bu düzenlemelerin yapım aşamasında mevcut hak ve yükümlülüklerin de yasa ve yönetmeliklere uygun bir şekilde korunması gereklidir. Yapılacak uygulamalarda kullanılmak üzere pdf formatında temin edilen tapu sözel verileri ilgili programın modülüne girilir. Bu uygulama ile tapu sözel verileri Python aracılığıyla manipüle edilmekte ve tüm dosyalardaki ilgili veriler excel formatında dışa aktarılmaktadır. Böylelikle hem zamandan hem de iş gücünden tasarruf sağlanmaktadır.</div>
