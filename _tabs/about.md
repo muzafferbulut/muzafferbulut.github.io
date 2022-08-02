@@ -24,11 +24,11 @@ Merhaba, ben Muzaffer. Harita Mühendisiyim. 2016 yılında Cibali Lisesi'ni oku
 
 # Projeler
 
-## GISMS:
+## [GISMS](https://www.youtube.com/watch?v=X5vuSjCwULw):
 
 * <div class='text-justify'>Kurucu üyelerinden olduğum TEKNOFEST Akılllı Ulaşım yarışmasında yarışan GISMS takımımızın CBS ve veritabanı sorumlusu olarak görev aldım. Görev sürem boyunca veri tabanı ve CBS çözümleri hakkında ön araştırmalar yaparak ürün geliştirme aşamasında ekibe destek oldum. Ekibimiz yarışmada finalist olma başarısı gösterdi. </div>
 
-## Termal Isı Adalarının Tespit Edilmesi ve Şehirleşmenin Yönünün Belirlenmesi:
+## [Termal Isı Adalarının Tespit Edilmesi ve Şehirleşmenin Yönünün Belirlenmesi](https://github.com/muzafferbulut/UHI):
 
 * <div class='text-justify'>Dünya nüfusunun hızla artmasına paralel olarak artan kontrolsüz ve plansız kentleşme insan sağlığı açısından ciddi sorunlara yol açabilecek bir problem olan kentsel ısı adalarının oluşmasına sebep olmuştur. Bu çalışmada Landsat 8 görüntüleri ve python programlama dili kullanılarak İstanbul ili için kentsel ısı adaları tespit edilmiş ve 5 senelik periyotta değişim analizi yapılmıştır.</div>
 
