@@ -5,9 +5,6 @@ categories: [Veritabanı, postgis]
 tags: [postgresql, postgis, spatial database, gis]
 ---
 
-
-# ETKİN MEKANSAL VERİ YÖNETİM ARACI: POSTGIS
-
 ## 1. GİRİŞ
 
 <div class='text-justify'>Bilgi ve iletişim teknolojilerinde yaşanmakta olan değişim ve dönüşüm her geçen gün hızını artırmakta ve insan hayatının neredeyse her alanına etki etmektedir. Yaşanan teknolojik gelişmeler sonucunda meydana gelen yeni ürün ve yöntemler ile insanlar yeni tecrübeler edinmekte ya da var olan deneyimlerini iyileştirmektedir. Teknolojinin getirdiği bu yenilikler sonucunda veri kaynakları artmış, yeni depolama yöntemleri ve analiz araçları geliştirilmiştir.</div>
