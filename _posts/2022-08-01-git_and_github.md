@@ -47,7 +47,7 @@ $ git init
 $ git branch branchname
 ```
 
-#### İlk Commit
+### İlk Commit
 
 <div class='text-justify'>Git'e tanıttığımız klasöre yeni dosyalar eklemeye başladığımızda 'git status' komutunun çıktıları değişecektir. Bu dosyalar yeni eklendiği ve sisteme 'izle' komutu verilmediği için untracked olarak kabul edilir. Dosyalardaki değişikleri ya da klasörün tamamındaki değişiklikleri takip etmek için aşağıdaki komutlar çalıştırılır.</div><br>
 
@@ -73,17 +73,17 @@ $ git log
 $ git commit -a "commit mesajı"
 ```
 
-#### Gitignore
+### Gitignore
 
 <div class='text-justify'>Git ile izlenen klasördeki tüm dosyalar indekslenip github'a yüklenebilir. Ancak bazı özel dosyaları bu durumdan muaf tutmak gerekebilir. Bunu sağlamak için .gitignore dosyası oluşturulur. Çalışılan klasörde oluşturulacak ve içine özel dosyalar yazılan .gitignore dosyası ile özel bilgi ve belgeler indekslenmeyecek, repoya eklenmeyecektir. Github’da gitignore reposu altında programlama dillerine özel gitignore şablonları vardır. Projeyi internete atmadan önce bu listeler incelenerek faydalanılabilir.
 </div><br>
 
-#### Head
+### Head
 
 <div class='text-justify'>Bir repodaki ana branch projenin hazır halidir. Yani tamamlanan değişiklikler ana branchte tutulur. HEAD ise projede aktif olarak hangi branch ve hangi commitle olduğumuzu işaretleyen bir ifadedir. Yeni branchler açıldıkça ve yeni commitler geldikçe HEAD ifadesinin işaretlediği yer de değişir. 
 </div><br>
 
-#### Merge
+### Merge
 
 <div class='text-justify'>Proje ana branchi master branchtir. Daha sonra test ortamı ya da yeni özellikler eklemek için yeni bir branch açıp ('git branch branchname' komutu ile) oradaki çalışmalar tamamlandıktan sonra bu iki branchi (daha fazla da olabilir) birleştirme ihtiyacı doğabilir. Bu durumda HEAD yeni açılan branchi işaretleyecektir. Tekrar master branche dönmek için 'git switch master' komutu çalıştırılmalıdır. Bu iki branchte yapılan değişiklikleri birleştirmek için merge komutu kullanılır. Aşağıdaki komut ile master branchin üzerine sonradan açılan branch eklenir ve birleştirme işlemi tamamlanır. git branch komutu çalıştırıldığında güncel branch listesi ekrana basılır.</div><br>
 
@@ -96,15 +96,15 @@ $ git switch branchname
 
 ```
 
-#### Fast Forward
+### Fast Forward
 
 <div class='text-justify'>Yeni bir branch açarak çalışıldığında değişiklikler aynı noktalarda yapılabilir. Bu durumda merge işlemi aşamasında conflict problemi ile karşılaşabiliriz. Bu durum genellikle hem master hem de yan branchlerde değişiklik yapıldığında karşılaşılabilir. Bunun önüne geçmek için masterda hiç değişiklik yapmadan tüm değişikliklerin yan branchte yapılıp daha sonradan birleştirme yoluna gidilebilir. Bu işlem fast forwarding denir.</div><br>
 
-#### Merge Conflict
+### Merge Conflict
 
 <div class='text-justify'>Farklı branchlerde yapılan ve birbirini etkileyen işlemler merge conflict hatasına sebep olabilir. Bu durumlarda merge işlemi otomatik olarak gerçekleştirilmez. Meydana gelen çakışmaların çözülmesi ve ondan sonra merge işleminin yapılması gereklidir. Kalacak ve gidecek dosyalar tespit edilir ve daha sonra merge ve commit işlemi tekrar yapılarak bu sorun da çözülmüş olur.</div><br>
 
-#### Stash Kavramı
+### Stash Kavramı
 
 <div class='text-justify'>Bir branchte yapılan değişikliklerin commitlenememesi ve branchin değişmesi durumunda farklı problemler ortaya çıkabilir. Proje, restore komutu ile son commit durumuna geri döndürülebilir ancak bu da veri kaybı demektir. Proje commitlemeye müsaitse commit edilmeli aksi durumda restore ve stash kavramları değerlendirilmelidir.
 
@@ -130,12 +130,12 @@ $ git checkout commitID
 
 <div class='text-justify'>Peki aynı branchten devam etmek için ne yapmalıyız? 'git reset commitID' ile verilen commit ID’den sonraki commitler silinir ancak o commitlerin değişiklikleri kalır. 'git reset --hard commitID' komutu ile verilen commitID’den sonraki commitleri ve yapılan değişiklerin hepsini siler. Ancak dikkatli olunmalıdır, özellikle birden fazla kişi ile çalışırken conflicte sebep olabilir. Son iki commiti sileyim ama yeni bir commit oluşturayım bir de masterdan devam edeyim dersek o zaman revert komutunu kullanacağız. git revert commitID şekliyle yaralanıyoruz. Ancak bunları yaparken dikkat etmeliyiz çünkü conflict meydana gelebilir. </div><br>
 
-#### Git Diff
+### Git Diff
 
 <div class='text-justify'>Git diff komutu ile belli başlı yerler arasındaki farkları gösterir. Bunlar dosyalar ve kodlar arasındaki farklar olabilir. Yapılan değişiklikleri, silinenleri ve eklenenleri gösterir. Git diff tek başına çalıştırıldığında sadece güncel dosya içerisinde yapılan değişikleri gösterir. İndekslenen dosyadaki değişiklikleri göstermez. Ama biz herhangi bir şey için de değişiklikleri de görebiliriz. Mesela git diff HEAD çalıştırıp son commite göre neleri değiştirdiğimizi de görebiliriz (Bunun sebebi HEAD’in son commite işaret etmesi). Commitler arasındaki farkı görmek için ise git diff commit1 commit2 yazarsak iki commit arasındaki farkı gösterir.
 İki commit arasındaki boşluk açısından bir problem olursa iki nokta koyabiliriz. Aynı şekilde iki branch arasındaki değişiklikleri de görebiliriz. </div><br>
 
-#### Rebase
+### Rebase
 
 <div class='text-justify'>Git’in en çok korkulan konularından biridir çünkü yanlış kullanılırsa sorunlara sebep olabilir. Ana proje master branchinde tutuluyor olsun. Başka bir branch ile çalışmalarımıza devam edip tamamladıktan sonra merge edebiliriz. Ve bu durum devam ederse bir çok merge commit oluşur. git switch feat ve ardından git rebase master  komutları ile rebase yapılabilir ve bu şekilde commitler sıralanarak loglanabilir. 
 Bu şekilde bir uygulamada tarih değiştiği için özellikle takım çalışmalarında problem yaratabilir. Bireysel çalışmalarda kullanmaya daha uygundur.
@@ -145,7 +145,7 @@ Rebase ile merge commitleri temizleyip önce master commitleri sonra yeni branch
 
 <div class='text-justify'>Git popüler bir versiyon kontrol sistemidir ve faydaları saymakla bitmez. Git’in yol arkadaşı local repolarımızı online ortama taşıyabildiğimiz ücretli ve ücretsiz versiyonları bulunan Github’dır. Github ile projelerimizi public ya da private olarak saklayabilir, takım çalışmalarına katılabilir ve başka projelere katkıda bulunabiliriz. Bu işlemleri yapmak için de clone ve fork kavramlarını bilmek gereklidir. </div><br>
 
-#### İlk Repository
+### İlk Repository
 
 <div class='text-justify'>Github internet sitesinde yeni bir repo oluşturulur. Oluşturulan repoya ait bilgiler açılış ekranında verilir. 
 ```
@@ -177,7 +177,7 @@ $ git pull origin master
 ```
 </div><br>
 
-#### Clone ve Fork
+### Clone ve Fork
 
 <div class='text-justify'> Github ile paylaşılmış bir repoyu siteden indirebileceğimiz gibi, git ile de bir repo dosyası olarak indirebiliriz.
 ```
