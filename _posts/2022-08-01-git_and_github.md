@@ -36,7 +36,7 @@ $ git init
 -- klasörü git reposu haline getirir.
 ```
 
-<div class='text-justify'>Herhangi bir klasörde 'git init' çalıştırmadan önce git status komutunu çalıştırarak güncel durumunu kontrol etmemiz gerekir. Git initi tekrar tekrar çalıştırmak karışıklığa sebep olabilir. Git init komutu çalıştığında mevcut klasörde .git isimli gizli bir klasör oluşur. Eğer yanlışlık bir klasörde git init komutu çalıştırılırsa bu klasörü silerek git ile bağlantısını kaldırmış oluruz. </div><br>
+<div class='text-justify'>Herhangi bir klasörde init komutu çalıştırmadan önce status komutunu çalıştırarak güncel durumunu kontrol etmemiz gerekir. Git initi tekrar tekrar çalıştırmak karışıklığa sebep olabilir. Git init komutu çalıştığında mevcut klasörde .git isimli gizli bir klasör oluşur. Eğer yanlışlık bir klasörde git init komutu çalıştırılırsa bu klasörü silerek git ile bağlantısını kaldırmış oluruz. </div><br>
 
 ### Git Branch
 
@@ -60,7 +60,7 @@ $ git add .
 ```
 
 <div class='text-justify'>Bu komutlardan sonra sistem dosyaları izlemeye başladı ancak henüz commit edilmedi, sadece indekslendi. Aşağıdaki komutla değişikliklerimizi commitleyerek değişiklikleri onaylayabiliriz. Commit mesajlarının kısa ve açıklayıcı olmasına özen gösterilmelidir.
-Commitlenen dosyalar, commit zamanı, commit işlemini yapan kişiye ait bilgiler loglanır. Bu loglamaya ilerleyen dönemlerde ihtiyaç halinde ulaşılabilir. 'git log' komutu ile commitlere ait loglara erişebiliriz. Eğer tek bir satırda hem git add hem de commit işlemi yapmak istersek commit yaparken -a argümanını kullanabiliriz.</div><br>
+Commitlenen dosyalar, commit zamanı, commit işlemini yapan kişiye ait bilgiler loglanır. Bu loglamaya ilerleyen dönemlerde ihtiyaç halinde ulaşılabilir. git log komutu ile commitlere ait loglara erişebiliriz. Eğer tek bir satırda hem git add hem de commit işlemi yapmak istersek commit yaparken -a argümanını kullanabiliriz.</div><br>
 
 ```
 -- değişikliklerin commitlenmesi
@@ -75,7 +75,7 @@ $ git commit -a "commit mesajı"
 
 ### Gitignore
 
-<div class='text-justify'>Git ile izlenen klasördeki tüm dosyalar indekslenip github'a yüklenebilir. Ancak bazı özel dosyaları bu durumdan muaf tutmak gerekebilir. Bunu sağlamak için .gitignore dosyası oluşturulur. Çalışılan klasörde oluşturulacak ve içine özel dosyalar yazılan .gitignore dosyası ile özel bilgi ve belgeler indekslenmeyecek, repoya eklenmeyecektir. Github’da gitignore reposu altında programlama dillerine özel gitignore şablonları vardır. Projeyi internete atmadan önce bu listeler incelenerek faydalanılabilir.
+<div class='text-justify'>Git ile izlenen klasördeki tüm dosyalar indekslenip github'a yüklenebilir. Ancak bazı özel dosyaları bu durumdan muaf tutmak gerekebilir. Bunu sağlamak için gitignore dosyası oluşturulur. Çalışılan klasörde oluşturulacak ve içine özel dosyalar yazılan .gitignore dosyası ile özel bilgi ve belgeler indekslenmeyecek, repoya eklenmeyecektir. Github’da gitignore reposu altında programlama dillerine özel gitignore şablonları vardır. Projeyi internete atmadan önce bu listeler incelenerek faydalanılabilir.
 </div><br>
 
 ### Head
@@ -85,7 +85,7 @@ $ git commit -a "commit mesajı"
 
 ### Merge
 
-<div class='text-justify'>Proje ana branchi master branchtir. Daha sonra test ortamı ya da yeni özellikler eklemek için yeni bir branch açıp ('git branch branchname' komutu ile) oradaki çalışmalar tamamlandıktan sonra bu iki branchi (daha fazla da olabilir) birleştirme ihtiyacı doğabilir. Bu durumda HEAD yeni açılan branchi işaretleyecektir. Tekrar master branche dönmek için 'git switch master' komutu çalıştırılmalıdır. Bu iki branchte yapılan değişiklikleri birleştirmek için merge komutu kullanılır. Aşağıdaki komut ile master branchin üzerine sonradan açılan branch eklenir ve birleştirme işlemi tamamlanır. git branch komutu çalıştırıldığında güncel branch listesi ekrana basılır.</div><br>
+<div class='text-justify'>Proje ana branchi master branchtir. Daha sonra test ortamı ya da yeni özellikler eklemek için yeni bir branch açıp oradaki çalışmalar tamamlandıktan sonra bu iki branchi (daha fazla da olabilir) birleştirme ihtiyacı doğabilir. Bu durumda HEAD yeni açılan branchi işaretleyecektir. Tekrar master branche dönmek için switch komutu çalıştırılmalıdır. Bu iki branchte yapılan değişiklikleri birleştirmek için merge komutu kullanılır. Aşağıdaki komut ile master branchin üzerine sonradan açılan branch eklenir ve birleştirme işlemi tamamlanır. git branch komutu çalıştırıldığında güncel branch listesi ekrana basılır.</div><br>
 
 ```
 -- Merge komutu
@@ -94,11 +94,13 @@ $ git merge branchname "commit mesajı"
 -- Branch değiştirme
 $ git switch branchname
 
+-- Branch listesi
+$ git branch
 ```
 
 ### Fast Forward
 
-<div class='text-justify'>Yeni bir branch açarak çalışıldığında değişiklikler aynı noktalarda yapılabilir. Bu durumda merge işlemi aşamasında conflict problemi ile karşılaşabiliriz. Bu durum genellikle hem master hem de yan branchlerde değişiklik yapıldığında karşılaşılabilir. Bunun önüne geçmek için masterda hiç değişiklik yapmadan tüm değişikliklerin yan branchte yapılıp daha sonradan birleştirme yoluna gidilebilir. Bu işlem fast forwarding denir.</div><br>
+<div class='text-justify'>Yeni bir branch açarak çalışıldığında değişiklikler aynı noktalarda yapılabilir. Bu durumda merge işlemi aşamasında conflict problemi ile karşılaşabiliriz. Bu durum genellikle hem master hem de yan branchlerde değişiklik yapıldığında karşılaşılabilir. Bunun önüne geçmek için masterda hiç değişiklik yapmadan tüm değişikliklerin yan branchte yapılıp daha sonradan birleştirme yoluna gidilebilir. Bu işleme fast forwarding denir.</div><br>
 
 ### Merge Conflict
 
@@ -113,10 +115,9 @@ $ git switch branchname
 $ git restore filename
 ```
 
-<div class='text-justify'>Stash yaparak değişiklikleri commitlemeden de saklayıp daha sonradan dönebiliriz. Değişiklik yapıldıktan sonra commitleyecek durumda değilsek 'git stash' komutu ile yapılan değişiklikler saklanır. Değişiklikleri sakladığımız yerden almak için 'git stash pop' komutu çalıştırılır. Gerekli düzenlemeler tamamlandıktan sonra commitlenebilir.</div><br>
+<div class='text-justify'>Stash yaparak değişiklikleri commitlemeden de saklayıp daha sonradan dönebiliriz. Değişiklik yapıldıktan sonra commitleyecek durumda değilsek stash komutu ile yapılan değişiklikler saklanır. Değişiklikleri sakladığımız yerden almak için stash pop komutu çalıştırılır. Gerekli düzenlemeler tamamlandıktan sonra commitlenebilir.</div><br>
 
-<div class='text-justify'>'git stash list' komutu ile güncel stashleri listeleriz. Birden fazla stash varsa git stash apply stash@{0} komutu ile stash listesinden istediğimiz stashi geri getirebiliriz. Bu şekilde istediğimiz stashi istediğimiz yere commitleyebiliriz.
-Git stash clear komutu ile stash listesini temizleyebiliriz. git stash apply komutu ile de mevcut stash’in tuttuğu değişiklikler geri getirilir ama stash listesinde de kalmaya devam eder. Pop ile geri getirilen değişiklikler stash listesinden çıkarılır.</div><br>
+<div class='text-justify'>git stash list komutu ile güncel stashleri listeleriz. Birden fazla stash varsa git stash apply stash@{0} komutu ile stash listesinden istediğimiz stashi geri getirebiliriz. Bu şekilde istediğimiz stashi istediğimiz yere commitleyebiliriz. Git stash clear komutu ile stash listesini temizleyebiliriz. git stash apply komutu ile de mevcut stash’in tuttuğu değişiklikler geri getirilir ama stash listesinde de kalmaya devam eder. Pop ile geri getirilen değişiklikler stash listesinden çıkarılır.</div><br>
 
 ### Geçmişe Dönme
 
@@ -128,7 +129,7 @@ $ git checkout commitID
 
 <div class='text-justify'>Ancak bu noktada bir problem ortaya çıkar. HEAD kısmı güncel commiti gösterir ama master son commiti gördüğü için HEAD’i görmez. Bu hatadan kaçınmak için git switch master ile master branche geri dönebiliriz. Ama bu bizi geri döndürür yani değişiklik yapmamış oluruz.</div><br>
 
-<div class='text-justify'>Peki aynı branchten devam etmek için ne yapmalıyız? 'git reset commitID' ile verilen commit ID’den sonraki commitler silinir ancak o commitlerin değişiklikleri kalır. 'git reset --hard commitID' komutu ile verilen commitID’den sonraki commitleri ve yapılan değişiklerin hepsini siler. Ancak dikkatli olunmalıdır, özellikle birden fazla kişi ile çalışırken conflicte sebep olabilir. Son iki commiti sileyim ama yeni bir commit oluşturayım bir de masterdan devam edeyim dersek o zaman revert komutunu kullanacağız. git revert commitID şekliyle yaralanıyoruz. Ancak bunları yaparken dikkat etmeliyiz çünkü conflict meydana gelebilir. </div><br>
+<div class='text-justify'>Peki aynı branchten devam etmek için ne yapmalıyız? git reset commitID ile verilen commit ID’den sonraki commitler silinir ancak o commitlerin değişiklikleri kalır. git reset --hard commitID komutu ile verilen commitID’den sonraki commitleri ve yapılan değişiklerin hepsini siler. Ancak dikkatli olunmalıdır, özellikle birden fazla kişi ile çalışırken conflicte sebep olabilir. Son iki commiti sileyim ama yeni bir commit oluşturayım bir de masterdan devam edeyim dersek o zaman revert komutunu kullanacağız. git revert commitID şekliyle yaralanıyoruz. Ancak bunları yaparken dikkat etmeliyiz çünkü conflict meydana gelebilir. </div><br>
 
 ### Git Diff
 
