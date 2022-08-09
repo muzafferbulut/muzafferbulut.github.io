@@ -108,7 +108,7 @@ $ git branch
 
 ### Stash Kavramı
 
-<div class='text-justify'>Bir branchte yapılan değişikliklerin commitlenememesi ve branchin değişmesi durumunda farklı problemler ortaya çıkabilir. Proje, restore komutu ile son commit durumuna geri döndürülebilir ancak bu da veri kaybı demektir. Proje commitlemeye müsaitse commit edilmeli aksi durumda restore ve stash kavramları değerlendirilmelidir.
+<div class='text-justify'>Bir branchte yapılan değişikliklerin commitlenememesi ve branchin değişmesi durumunda farklı problemler ortaya çıkabilir. Proje, restore komutu ile son commit durumuna geri döndürülebilir ancak bu da veri kaybı demektir. Proje commitlemeye müsaitse commit edilmeli aksi durumda restore ve stash kavramları değerlendirilmelidir..</div><br>
 
 ```
 -- son commite dönme
@@ -121,7 +121,7 @@ $ git restore filename
 
 ### Geçmişe Dönme
 
-<div class='text-justify'>Commit atmadığımız değişiklikler için git restore komutu ile değişikliklerden vazgeçebiliriz. Ama commitledikten sonra tekrar geri dönmek gerekirse checkout komutu kullanılır.
+<div class='text-justify'>Commit atmadığımız değişiklikler için git restore komutu ile değişikliklerden vazgeçebiliriz. Ama commitledikten sonra tekrar geri dönmek gerekirse checkout komutu kullanılır..</div><br>
 
 ```
 $ git checkout commitID
@@ -148,44 +148,45 @@ Rebase ile merge commitleri temizleyip önce master commitleri sonra yeni branch
 
 ### İlk Repository
 
-<div class='text-justify'>Github internet sitesinde yeni bir repo oluşturulur. Oluşturulan repoya ait bilgiler açılış ekranında verilir. 
+<div class='text-justify'>Github internet sitesinde yeni bir repo oluşturulur. Oluşturulan repoya ait bilgiler açılış ekranında verilir. </div><br>
+  
 ```
 -- remote repo ekleme
 $ git remote add origin repoUrl
 
 -- uzak repoya değişiklikleri gönderme
 $ git push -u origin main 
-```
-Bu komut ile origin ismine uzaktaki reposityory bağlantımızı atadık ve lokaldeki değişikliklerimizi projemizin online ortamda bulunan bir temsiline gönderdik. 
-```
+
 -- uzak repodaki branchleri görüntüleme
 $ git branch -r
 
 -- uzak repodaki branche geçme
 $ git checkout origin/main
 ```
-</div><br>
 
 <div class='text-justify'>Özellikle farklı bilgisayarlar ile çalışırken repoların senkronize olmama durumu ile karşılaşabiliriz. Bu durumda repoları senkronize etmek için fetch ve pull komutları kullanılır. </div><br>
+  
 ```
 -- origin linkindeki master branchı getirme
 $ git fetch origin master
 ```
-<div class='text-justify'>Fetch komutu dosyaları bize getirir ama bizim dosyalarımızı değiştirmez. Bize değişiklikleri inceleme imkanı sunar. İncelemeden sonra bir problem olmadığı anlaşılırsa pull komutu ile dosyalardaki değişiklikleri onaylayabiliriz.
+<div class='text-justify'>Fetch komutu dosyaları bize getirir ama bizim dosyalarımızı değiştirmez. Bize değişiklikleri inceleme imkanı sunar. İncelemeden sonra bir problem olmadığı anlaşılırsa pull komutu ile dosyalardaki değişiklikleri onaylayabiliriz.</div><br>
+  
 ```
 -- origin linkindeki değişiklikleri onaylama
 $ git pull origin master
 ```
-</div><br>
 
 ### Clone ve Fork
 
-<div class='text-justify'> Github ile paylaşılmış bir repoyu siteden indirebileceğimiz gibi, git ile de bir repo dosyası olarak indirebiliriz.
+<div class='text-justify'> Github ile paylaşılmış bir repoyu siteden indirebileceğimiz gibi, git ile de bir repo dosyası olarak indirebiliriz.</div><br>
+  
 ```
 -- Clone
 $ git clone repoUrl
 ```
-Bu komut verilen adresteki dosyaları mevcut dizine indirecektir. Bu dosyalardan çalışmaya devam edebiliriz. Ancak uzaktaki bir projeye katkı sağlama düşüncesi varsa yani bu dosyalardaki değişiklikleri proje sahibine göndererek çalışmaya katkı vermeyi amaçlıyorsak o zaman projeyi forklamak gereklidir. Projeyi forkladıktan sonra local repo oluşturarak klonlayıp kendi değişikliklerimizi yapabilir incelemesi için tekrar proje sahibine (pull requests açmak) gönderebiliriz. </div><br>
+  
+<div class='text-justify'> Bu komut verilen adresteki dosyaları mevcut dizine indirecektir. Bu dosyalardan çalışmaya devam edebiliriz. Ancak uzaktaki bir projeye katkı sağlama düşüncesi varsa yani bu dosyalardaki değişiklikleri proje sahibine göndererek çalışmaya katkı vermeyi amaçlıyorsak o zaman projeyi forklamak gereklidir. Projeyi forkladıktan sonra local repo oluşturarak klonlayıp kendi değişikliklerimizi yapabilir incelemesi için tekrar proje sahibine (pull requests açmak) gönderebiliriz. </div><br>
 
 ### NOT:
 
