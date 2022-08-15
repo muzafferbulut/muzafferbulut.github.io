@@ -36,7 +36,7 @@ $ git init
 -- klasörü git reposu haline getirir.
 ```
 
-<div class='text-justify'>Herhangi bir klasörde init komutu çalıştırmadan önce status komutunu çalıştırarak güncel durumunu kontrol etmemiz gerekir. Git initi tekrar tekrar çalıştırmak karışıklığa sebep olabilir. Git init komutu çalıştığında mevcut klasörde .git isimli gizli bir klasör oluşur. Eğer yanlışlık bir klasörde git init komutu çalıştırılırsa bu klasörü silerek git ile bağlantısını kaldırmış oluruz. </div><br>
+<div class='text-justify'>Herhangi bir klasörde init komutu çalıştırmadan önce status komutunu çalıştırarak güncel durumunu kontrol etmemiz gerekir. Git initi tekrar tekrar çalıştırmak karışıklığa sebep olabilir. Git init komutu çalıştığında mevcut klasörde .git isimli gizli bir klasör oluşur. Eğer yanlışlıkla bir klasörde git init komutu çalıştırılırsa bu klasörü silerek git ile bağlantısını kaldırmış oluruz. </div><br>
 
 ### Git Branch
 
