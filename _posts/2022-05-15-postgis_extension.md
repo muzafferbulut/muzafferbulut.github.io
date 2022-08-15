@@ -23,7 +23,7 @@ tags: [postgresql, postgis, spatial database, gis]
 
 ### 2. PostGIS Kurulumu
 
-<div class='text-justify'>PostGIS kurulumundan önce bilgisayarda PostgreSQL kurulu olmalıdır. Eğer kurulu değilse [bu adresten](https://www.postgresql.org/download/)  kullanılacak bilgisayarın işletim sistemine uygun sürüm indirilerek temel kurulum adımları izlenerek kurulum yapılabilir. Daha sonra lokal sunucuya erişmek için kullanılacak olan master kullanıcı parolası kurulum adımında belirlenir ve unutulmamalıdır. </div><br>
+<div class='text-justify'>PostGIS kurulumundan önce bilgisayarda PostgreSQL kurulu olmalıdır. Eğer kurulu değilse postgresql.org adresinden  kullanılacak bilgisayarın işletim sistemine uygun sürüm indirilerek temel kurulum adımları izlenerek kurulum yapılabilir. Daha sonra lokal sunucuya erişmek için kullanılacak olan master kullanıcı parolası kurulum adımında belirlenir ve unutulmamalıdır. </div><br>
 
 <div class='text-justify'>PostgreSQL kurulumu tamamlandıktan sonra PostGIS eklentisini sunucuya dahil etmek için farklı bir prosedür izlenmektedir. PostgreSQL sunucusuna ek seçenek ve eklenti kurulmasına olanak tanıyan ve PostgreSQL kurulumu ile birlikte gelen Stack Builder uygulaması ile PostGIS eklentisi sunucuya kurulabilir. Aşağıdaki kurulum adımları izlenerek PostGIS eklentisi sunucuya dahil edilebilir [6].</div><br>
 
@@ -51,7 +51,7 @@ SELECT postgis_verison();
 
 ### 3. Mekansal Veri Ekleme
 
-<div class='text-justify'>PostGIS kurulumu sorunsuz bir şekilde tamamlandıktan sonra yeni bir veri tabanı oluşturarak örnek mekansal veri setini yükleyebiliriz. Bu yazıda [bu adresteki](https://postgis.net/workshops/postgis-intro/) New York şehrine ait örnek veri seti kullanılarak uygulamalar gerçekleştirilecektir. Aynı zamanda kurulum ve veri seti hakkında daha detaylı bilgiye bu sayfadan erişilebilir. </div><br>
+<div class='text-justify'>PostGIS kurulumu sorunsuz bir şekilde tamamlandıktan sonra yeni bir veri tabanı oluşturarak örnek mekansal veri setini yükleyebiliriz. Bu yazıda https://postgis.net/workshops/postgis-intro/ adresindeki New York şehrine ait örnek veri seti kullanılarak uygulamalar gerçekleştirilecektir. Aynı zamanda kurulum ve veri seti hakkında daha detaylı bilgiye bu sayfadan erişilebilir. </div><br>
 
 <div class='text-justify'>Öncelikle “nyc” isimli bir veri tabanı oluşturalım ve PostGIS eklentisini bu veri tabanına dahil edelim.</div><br>
 
@@ -70,7 +70,7 @@ CREATE EXTENSION postgis;
 
 <div class='text-justify'>Koordinat referans sistemleri, konumsal bilgilerin uzayda tek anlamlı bir şekilde ifade edilebilmesi için gerekli olan sabit katsayılar ve parametreleri tanımlar. Konumsal verinin anlam ifade edebilmesi ve analizlerde kullanılabilmesi için oldukça önemli bir kavramdır. Koordinat referans sistemlerinin tanımlanması için farklı sabitler ve parametreler kullanıldığndan standart bir koordinat tanımlama dili oluşturmak adına EPSG (European Petroleum Survey Group) kodları kullanılmaktadır. Bu şekilde hem ifade kolaylığı sağlanmış hem de ortak bir dil oluşturulmuştur. EPSG kodu PostGIS eklentisinde SRID olarak düşünülebilir.</div><br>
 
-<div class='text-justify'>Dünyanın şeklinden kaynaklı olarak haritalama işlemlerinde bozulmalar meydana gelmektedir. Bu bozulmalar koordinat sisteminin merkezinde en az olmak üzere kenarlara doğru gidildikçe artmaktadır. Dolayısıyla lokal çalışmalarda o bölgeyi en iyi ifade eden, en az bozulmaya sebep olan koordinat sistemi kullanılmaktadır. Tanımlı birçok koordinat sistemi bulunmakla birlikte PostGIS içerisinde gelen “spatial_ref_sys” tablosunda 8500 adet koordinat sistemi bulunmaktadır. Ülkelerde kullanılan koordinat sistemleri ve tanımlı koordinat sistemlerinin parametrelerine [epsg.io](https://epsg.io/) adresinden ulaşılabilir.</div><br>
+<div class='text-justify'>Dünyanın şeklinden kaynaklı olarak haritalama işlemlerinde bozulmalar meydana gelmektedir. Bu bozulmalar koordinat sisteminin merkezinde en az olmak üzere kenarlara doğru gidildikçe artmaktadır. Dolayısıyla lokal çalışmalarda o bölgeyi en iyi ifade eden, en az bozulmaya sebep olan koordinat sistemi kullanılmaktadır. Tanımlı birçok koordinat sistemi bulunmakla birlikte PostGIS içerisinde gelen “spatial_ref_sys” tablosunda 8500 adet koordinat sistemi bulunmaktadır. Ülkelerde kullanılan koordinat sistemleri ve tanımlı koordinat sistemlerinin parametrelerine epsg.io adresinden ulaşılabilir.</div><br>
 
 <div class='text-justify'>Konumsal analizlerin anlamlı bir sonuç verebilmesi için veri setlerinin aynı koordinat sisteminde olması gerekmektedir. Verilerin çeşitli kaynaklardan temin edildiği göz önüne alındığında analiz yapmadan önce koordinat dönüşümü yapmak gerekebilir. PostGIS eklentisi ile birlikte gelen fonksionlar ile koordinat dönüşümü ve koordinat tanımı değiştirme gibi işlemler basit SQL sorguları ile gerçekleştirilebilmektedir.</div><br>
 
@@ -585,8 +585,8 @@ Databases for Line Intersection and Point Containment Spatial Queries”, s. 7, 
 
 <div class='text-justify'>[6]	A. Marquez, PostGIS Essentials. PACT, 2015.</div>
 
-<div class='text-justify'>[7] “PostgreSQL Documentation”. 2022. [Çevrimiçi]. [Erişim](https://www.postgresql.org/docs/13/index.html)</div>
+“PostgreSQL Documentation”. 2022. [Çevrimiçi]. [Erişim](https://www.postgresql.org/docs/13/index.html)
 
-<div class='text-justify'>[8] “PostGIS Workshop”. 2022. [Çevrimiçi]. [Erişim](https://postgis.net/workshops/postgis-intro/#)</div>
+[8] “PostGIS Workshop”. 2022. [Çevrimiçi]. [Erişim](https://postgis.net/workshops/postgis-intro/#)
 
-<div class='text-justify'>[9] "PostGIS Documentation". 2022. [Çevrimiçi]. [Erişim](https://postgis.net/docs/manual-3.2/reference.html)</div>
+[9] "PostGIS Documentation". 2022. [Çevrimiçi]. [Erişim](https://postgis.net/docs/manual-3.2/reference.html)
