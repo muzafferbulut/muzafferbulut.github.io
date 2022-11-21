@@ -5,7 +5,7 @@ categories: [Veritabanı, PostgreSQL]
 tags: [postgresql, mimari,spatial database, architecture,]
 ---
 
-### 1. Giriş
+### Giriş
 
 <div class='text-justify'>
 70'li yıllarda önerilen ilişkisel veri tabanı modelinin en güçlü açık kaynak kodlu temsilcisi olan PostgreSQL, kullanıcılarına sağladığı avantajlar sayesinde halen etkin olarak kullanılmaktadır. Güvenlik, hız, mekansal veri desteği gibi avantajlı özellikler sunan PostgreSQL lisans maliyetlerini de ortadan kaldırmıştır. Client-server mimarisinde multi-process hizmet veren bir ilişkisel veri tabanı yönetim sistemidir. Aynı zamanda mekansal veri desteği sunan ilk ilişkisel veri tabanı yönetim sistemlerinden biridir.
@@ -31,17 +31,17 @@ Background process'ler sunucuda arka planda çalışan yönetimsel işleri gerç
 </div><br>
 
 <div class='text-justify'>
-<b>Background Writer :</b> Shared buffer pool’da bulunan dirty blokların (değiştirilmiş bloklar) memory'den diske yazılması işlemini gerçekleştirir. 
+<b>Background Writer :</b> Shared buffer pool’da bulunan dirty blokların (değiştirilmiş bloklar) memory'den diske yazılması işlemini gerçekleştirir. <br>
 
-<b>Checkpointer :</b> Checkpoint işleminin gerçekleşmesinden sorumlu process'tir.
+<b>Checkpointer :</b> Checkpoint işleminin gerçekleşmesinden sorumlu process'tir.<br>
 
-<b>Autovacuum Launcher :</b> Vacuum process'inin otomatik olarak belirli zamanlarda başlatılmasından sorumlu process'tir.
+<b>Autovacuum Launcher :</b> Vacuum process'inin otomatik olarak belirli zamanlarda başlatılmasından sorumlu process'tir.<br>
 
-<b>Wal Writer :</b> Wal bufferda bulunan veriyi wal dosyalarına kalıcı olarak yazmakla sorumludur. Wal dosyaları transaction bilgilerini tutan log dosyalardır. Sistemde ani kapanma durumunda veri kaybı oluşmasını önlemek ve veritabanını recover etmek için kullanılan dosyalardır.
+<b>Wal Writer :</b> Wal bufferda bulunan veriyi wal dosyalarına kalıcı olarak yazmakla sorumludur. Wal dosyaları transaction bilgilerini tutan log dosyalardır. Sistemde ani kapanma durumunda veri kaybı oluşmasını önlemek ve veritabanını recover etmek için kullanılan dosyalardır.<br>
 
-<b>Statistic Collector :</b> Verittabanı istatistiklerinin toplanmasını sağlayan processtir.
+<b>Statistic Collector :</b> Verittabanı istatistiklerinin toplanmasını sağlayan processtir.<br>
 
-<b>Logger :</b> Error mesajlarını log dosyalarına yazan processtir.
+<b>Logger :</b> Error mesajlarını log dosyalarına yazan processtir.<br>
 
 <b>Archiving :</b> Arşivleme işlemini gerçekleştiren processtir.
 </div><br>
@@ -65,7 +65,6 @@ Her backend processinin kendi kendi kullanımı için açılan memory alanıdır
 <b>maintenance_work_mem :</b> reindex, vacuum gibi bakım işlemleri için kullanılan alandır.
 
 <b>temp_buffer :</b> geçici tabloların tutulduğu bellek alanıdır.
-</div><br>
 
 * #### Shared Memory Area
 <div class='text-justify'>
