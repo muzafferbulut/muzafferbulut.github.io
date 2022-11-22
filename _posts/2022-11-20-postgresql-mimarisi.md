@@ -15,22 +15,21 @@ tags: [postgresql, mimari,spatial database, architecture,]
 PostgreSQL mimarisi memory, process ve disk üzerindeki dosyalardan oluşur. Process'ler postgres server, backend, background, replication associated process olmak üzere 4 ana başlıkta incelenebilir.
 </div><br>
 
-#### Postgres Server Process
+#### 1.1. Postgres Server Process
 <div class='text-justify'>
 Postgresql server üzerinde çalışan, server çalıştığında ilk ayağa kalkan ve diğer process'lerin bağlı olduğu process'tir. Sistem başlatıldığında shared memory'den postgresql server'in kullanacağı ram alanı allocate edilir ve background process'ler başlatılır. Varsa replication processler çalıştırılır ve sunucu kullanıcıyı dinlemeye başlar. Kullanıcıdan bir talep geldiği zaman bir backend process başlatılır ve kullanıcıdan gelen tüm talepleri de bu backend process yakalar.
 </div><br>
 
-#### Backend Process
+#### 1.2. Backend Process
 <div class='text-justify'>
 Postgres olarakta adlandırılan backend process client tarafından gönderilen sorgu ve statement'ları yakalayan process'tir. Kullanıcı bir SQL çalıştırmak için sisteme bağlandığında postgres server process (postmaster) tarafından yeni bir backend process (postgres) fork edilir ve kullanıcıdan gelen talepler dinlenir. Kullanıcı bağlantısını kestiği zaman postgres terminate edilir. Eğer kısa zamanda sık sık kullanıcı bağlanıp bağlantıyı kesiyorsa (web sitesi hizmetleri gibi)  bağlantı isteklerine karşılık vermek için başlatılan backend process maliyetleri artıracaktır. Bunun için Postgresql orta katmanında pg_browser gibi uygulamalar kullanılarak bu işlemler gerçekleştirilir. Kullanıcı gelir bağlanır işi bitince disconnect olur ve connection havuzuna bırakır. Bu sebeple backend process sürekli aç kapa olmayacağı için sunucu rahatlar.
 </div><br>
 
-#### Backgorund Process
+#### 1.3. Backgorund Process
 <div class='text-justify'>
 Background process'ler sunucuda arka planda çalışan yönetimsel işleri gerçekleştiren process'lerdir. ps -ef komutu ile işletim sistemi üzerinde çalışan processleri, ps -ef | grep postgres komutu ile postgresle ilgli çalışan background processleri görüntüleyebiliriz. Background process'ler logger, checkpointer, background writer, walwriter, autovacuum launcher, stats collector olarak sıralanabilir.
 </div><br>
 
-<div class='text-justify'>
 <b>Background Writer :</b> Shared buffer pool’da bulunan dirty blokların (değiştirilmiş bloklar) memory'den diske yazılması işlemini gerçekleştirir. <br>
 
 <b>Checkpointer :</b> Checkpoint işleminin gerçekleşmesinden sorumlu process'tir.<br>
@@ -44,19 +43,18 @@ Background process'ler sunucuda arka planda çalışan yönetimsel işleri gerç
 <b>Logger :</b> Error mesajlarını log dosyalarına yazan processtir.<br>
 
 <b>Archiving :</b> Arşivleme işlemini gerçekleştiren processtir.
-</div><br>
 
 #### Replication Associated Process 
 <div class='text-justify'>
 Streming işleminden sorumlu processtir. Replikasyon işlemi sırasında veri transfrer işlemini sağlayan processtir.
 </div><br>
 
-### PostgreSQL Memory Yapıları
+### 2. PostgreSQL Memory Yapıları
 <div class='text-justify'>
 PostgreSQL'de memory yapıları local ve shared memory area olmak üzere ikiye ayrılır.
 </div><br>
 
-* #### Local Memory Area
+#### 2.1. Local Memory Area
 <div class='text-justify'>
 Her backend processinin kendi kendi kullanımı için açılan memory alanıdır. Kullanıcıdan gelen sorgulama işlemleri sırasında kullanmak için memoryden allocate edilen alandır. Work_mem, maintenance_work_mem ve temp_buffer olmak üzere 3 temel yapıdan oluşur.</div><br>
 
@@ -66,7 +64,7 @@ Her backend processinin kendi kendi kullanımı için açılan memory alanıdır
 
 <b>temp_buffer :</b> geçici tabloların tutulduğu bellek alanıdır.
 
-* #### Shared Memory Area
+* #### 2.2. Shared Memory Area
 <div class='text-justify'>
 Tüm processler tarafından paylaşımlı olarak kullanılan memory alandır. PostgreSQL server başlatıldığında memoryden allocate edilen alandır. Postgres server process tarafından allocate edilir. Bu alanda shared buffer pool, wal buffer ve commit log (CLOG) gibi 3 bileşenden oluşur.
 </div><br>
