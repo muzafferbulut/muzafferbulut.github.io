@@ -5,7 +5,7 @@ categories: [Veritabanı, PostgreSQL]
 tags: [postgresql, mimari,spatial database, architecture,]
 ---
 
-### Giriş
+### 1. Giriş
 
 <div class='text-justify'>
 70'li yıllarda önerilen ilişkisel veri tabanı modelinin en güçlü açık kaynak kodlu temsilcisi olan PostgreSQL, kullanıcılarına sağladığı avantajlar sayesinde halen etkin olarak kullanılmaktadır. Güvenlik, hız, mekansal veri desteği gibi avantajlı özellikler sunan PostgreSQL lisans maliyetlerini de ortadan kaldırmıştır. Client-server mimarisinde multi-process hizmet veren bir ilişkisel veri tabanı yönetim sistemidir. Aynı zamanda mekansal veri desteği sunan ilk ilişkisel veri tabanı yönetim sistemlerinden biridir.
@@ -44,7 +44,7 @@ Background process'ler sunucuda arka planda çalışan yönetimsel işleri gerç
 
 <b>Archiving :</b> Arşivleme işlemini gerçekleştiren processtir.
 
-#### Replication Associated Process 
+#### 1.4. Replication Associated Process 
 <div class='text-justify'>
 Streming işleminden sorumlu processtir. Replikasyon işlemi sırasında veri transfrer işlemini sağlayan processtir.
 </div><br>
