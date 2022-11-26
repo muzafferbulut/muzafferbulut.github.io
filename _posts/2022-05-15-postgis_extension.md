@@ -222,7 +222,7 @@ SELECT ST_GeomFromGeoJSON('{"type":"Point","coordinates":[-48.23456,20.12345]}')
 
 <div class='text-justify'>Benzer şekilde ST_AsGeoJson fonksiyonu ile geometri verisinden geojson verisi elde edilebilir.</div><br>
 
-### 6.3. ST_GeomFromGML(gml)
+#### 6.3. ST_GeomFromGML(gml)
 
 <div class='text-justify'>OGC GML formatında tanımlanmış geometri verisini PostGIS geometri verisi formatında döndürür. Ancak yalnızca GML’in geometri kısımları için kullanılmalıdır. Tüm GML belgesinde kullanılması halinde hataya sebep olacaktır [9].
 </div><br>
