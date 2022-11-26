@@ -6,7 +6,7 @@ tags: [postgresql, postgis, spatial database, gis]
 ---
 
 ### 1. Giriş
-
+---
 <div class='text-justify'>Bilgi ve iletişim teknolojilerinde yaşanmakta olan değişim ve dönüşüm her geçen gün hızını artırmakta ve insan hayatının neredeyse her alanına etki etmektedir. Yaşanan teknolojik gelişmeler sonucunda meydana gelen yeni ürün ve yöntemler ile insanlar yeni tecrübeler edinmekte ya da var olan deneyimlerini iyileştirmektedir. Teknolojinin getirdiği bu yenilikler sonucunda veri kaynakları artmış, yeni depolama yöntemleri ve analiz araçları geliştirilmiştir.</div><br>
 
 <div class='text-justify'>Veri, en genel anlamda bir amaç doğrultusunda sistematik olarak toplanan her türlü harf, rakam ya da ‘değer’ler topluluğu olarak tanımlanabilir. Veri üretilirken ilgili amaç doğrultusunda “Ne?” sorusunda yanıt aranır. Bununla birlikte herhangi bir nesne ya da olgunun coğrafi konumunu ifade etmek için kullanılan veriye ise konumsal veri denir [1]. Günümüzde çeşitli kaynaklardan üretilen verinin çok büyük bir bölümünün konuma dayalı olduğu düşünüldüğünde bu verinin depolanması ve analizi büyük önem arz etmektedir.</div><br>
@@ -22,7 +22,7 @@ tags: [postgresql, postgis, spatial database, gis]
 <div class='text-justify'>Bu yazıda PostGIS kurulumundan başlanarak örnek bir vektör veri seti üzerinde kullanışlı PostGIS fonksiyonları aktarılarak kullanım örneklerine yer verilecektir.</div><br>
 
 ### 2. PostGIS Kurulumu
-
+---
 <div class='text-justify'>PostGIS kurulumundan önce bilgisayarda PostgreSQL kurulu olmalıdır. Eğer kurulu değilse postgresql.org adresinden  kullanılacak bilgisayarın işletim sistemine uygun sürüm indirilerek temel kurulum adımları izlenerek kurulum yapılabilir. Daha sonra lokal sunucuya erişmek için kullanılacak olan master kullanıcı parolası kurulum adımında belirlenir ve unutulmamalıdır. </div><br>
 
 <div class='text-justify'>PostgreSQL kurulumu tamamlandıktan sonra PostGIS eklentisini sunucuya dahil etmek için farklı bir prosedür izlenmektedir. PostgreSQL sunucusuna ek seçenek ve eklenti kurulmasına olanak tanıyan ve PostgreSQL kurulumu ile birlikte gelen Stack Builder uygulaması ile PostGIS eklentisi sunucuya kurulabilir. Aşağıdaki kurulum adımları izlenerek PostGIS eklentisi sunucuya dahil edilebilir [6].</div><br>
@@ -50,7 +50,7 @@ SELECT postgis_verison();
 <div class='text-justify'>Kullanılan PostGIS sürümüne ait bilgiler sorunsuz şekilde ekrana yazıldığı takdirde kurulum tamamlanmış, kullanıma hazırdır.</div><br>
 
 ### 3. Mekansal Veri Ekleme
-
+---
 <div class='text-justify'>PostGIS kurulumu sorunsuz bir şekilde tamamlandıktan sonra yeni bir veri tabanı oluşturarak örnek mekansal veri setini yükleyebiliriz. Bu yazıda https://postgis.net/workshops/postgis-intro/ adresindeki New York şehrine ait örnek veri seti kullanılarak uygulamalar gerçekleştirilecektir. Aynı zamanda kurulum ve veri seti hakkında daha detaylı bilgiye bu sayfadan erişilebilir. </div><br>
 
 <div class='text-justify'>Öncelikle “nyc” isimli bir veri tabanı oluşturalım ve PostGIS eklentisini bu veri tabanına dahil edelim.</div><br>
@@ -67,7 +67,7 @@ CREATE EXTENSION postgis;
 <div class='text-justify'>Daha sonra “Add File” butonu ile veri tabanına eklenecek olan *.shp uzantılı dosyalar seçilerek SRID değerleri ayarlanır. SRID değeri veri setinin koordinat sistemini ve sisteme ait parametreleri ifade eden bir kod olarak düşünülebilir. Bu kavram ile ilgili daha detaylı bilgiye ilerleyen bölümlerde değinilecektir. Kullanılacak veri seti için SRID değeri 26918 olarak girilmelidir. Son olarak "Import" butonuna tıklanır ve dosyalar bağlantı yapılan veri tabanına tablo olarak eklenir.</div><br>
 
 ### 4. Koordinat Sistemleri ve SRID Kavramı
-
+---
 <div class='text-justify'>Koordinat referans sistemleri, konumsal bilgilerin uzayda tek anlamlı bir şekilde ifade edilebilmesi için gerekli olan sabit katsayılar ve parametreleri tanımlar. Konumsal verinin anlam ifade edebilmesi ve analizlerde kullanılabilmesi için oldukça önemli bir kavramdır. Koordinat referans sistemlerinin tanımlanması için farklı sabitler ve parametreler kullanıldığndan standart bir koordinat tanımlama dili oluşturmak adına EPSG (European Petroleum Survey Group) kodları kullanılmaktadır. Bu şekilde hem ifade kolaylığı sağlanmış hem de ortak bir dil oluşturulmuştur. EPSG kodu PostGIS eklentisinde SRID olarak düşünülebilir.</div><br>
 
 <div class='text-justify'>Dünyanın şeklinden kaynaklı olarak haritalama işlemlerinde bozulmalar meydana gelmektedir. Bu bozulmalar koordinat sisteminin merkezinde en az olmak üzere kenarlara doğru gidildikçe artmaktadır. Dolayısıyla lokal çalışmalarda o bölgeyi en iyi ifade eden, en az bozulmaya sebep olan koordinat sistemi kullanılmaktadır. Tanımlı birçok koordinat sistemi bulunmakla birlikte PostGIS içerisinde gelen “spatial_ref_sys” tablosunda 8500 adet koordinat sistemi bulunmaktadır. Ülkelerde kullanılan koordinat sistemleri ve tanımlı koordinat sistemlerinin parametrelerine epsg.io adresinden ulaşılabilir.</div><br>
@@ -255,7 +255,7 @@ SELECT ST_GeomFromKML('
 <div class='text-justify'>ST_AsKML fonksiyonu ile postgis geometrisinden OGC KML verisi elde edilebilir. Yine yalnızca geometri kısmı için geçerlidir. </div><br>
 
 ### 7. Topolojik İlişkiler
-
+---
 <div class='text-justify'>PostGIS, geometrilerin uzayda birbirine göre durumlarını sınayan bir dizi fonksiyona sahiptir. Bu fonksiyonlar kullanılarak mekansal veriler arasındaki ilişkileri sorgulayabilir aynı zamanda çeşitli mekansal analizleri gerçekleştirebiliriz.</div><br>
 
 <div class='text-justify'>Bu bölümde geometrilerin birbirlerine göre durumlarını sınayan PostGIS fonksiyonları üzerinde durulmuştur. A ve B değişkenlerinin birer PostGIS geometrisi olduğu düşünülmelidir.</div><br>
@@ -367,7 +367,7 @@ ORDER BY number_of_homicides DESC
 ```
 
 ## 8. ÖLÇÜM FONKSİYONLARI
-
+---
 <div class='text-justify'>PostGIS veri tabanında depolanan geometri verileri için yine PostGIS fonksiyonları kullanılarak uzunluk, alan, çevre hesabı gibi birçok hesap yapılabilir.</div><br>
 
 #### 8.1. ST_Area(A)
@@ -439,7 +439,7 @@ ORDER BY perimeter DESC;
 ```
 
 ### 9. Bindirme Fonksiyonları
-
+---
 <div class='text-justify'>Topolojik fonksiyonlar ile mekansal ilişkilerin sınanması sonucu boolean değer döner. Bindirme fonksiyonları kullanıldığında mekansal verileri kesişim, birleşim ve fark bulma gibi fonksiyonlara tabi tutarak bu işlemler sonucunda meydana gelen yeni geometriler üretilebilir.</div><br>
 
 #### 9.1. ST_Intersection(A, B)
@@ -496,7 +496,7 @@ SELECT ST_SymDifference(
 ```
 
 ### 10. Geometri İşleme Fonksiyonları
-
+---
 <div class='text-justify'>Geometri işleme fonksiyonları, parametre olarak aldığı geometriler üzerinde hesaplamalar yapabilirken bu geometrilerin şeklini ve boyutunu değiştirebilir.</div><br>
 
 #### 10.1. ST_Buffer(geom, buffer_radius)
@@ -565,7 +565,7 @@ FROM nyc_neighborhoods
 ```
 
 ### 11. Sonuç
-
+---
 <div class='text-justify'>Bu yazıda günümüzde oldukça popüler olan en güçlü açık kaynak kodlu veri tabanı yönetim sistemlerinden biri olan PostgreSQL'in etkin mekansal veri yönetim aracı PostGIS ve mekansal fonksiyonları üzerinde durulmuştur. PostGIS çok güçlü bir mekansal veri yönetim aracıdır ve arkasındaki açık kaynak geliştirici topluluğu sayesinde gelişmeye devam etmektedir.</div><br>
 
 <div class='text-justify'>Günümüzde üretilen verinin çok büyük bir bölümünün konumsal olduğu düşünüldüğünde çıkarılabilecek faydalı bilgi ihmal edilemeyecek düzeydedir. PostGIS aracıyla PostgreSQL mekansal veriden faydalı bilgi çıkarmakta etkin ve kullanışlı bir yol sunmaktadır.</div><br>

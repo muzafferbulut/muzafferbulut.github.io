@@ -7,7 +7,7 @@ order: 4
 <div class='text-justify'>
 Merhaba, ben Muzaffer. Harita Mühendisiyim. 2016 yılında Cibali Lisesi'ni okul birincisi olarak tamamladıktan sonra Gebze Teknik Üniversitesi Harita Mühendisliği Programı'na başladım. 2021 yılında bölüm ikincisi derecesiyle onur öğrencisi olarak mezun oldum.</div>
 <br>
-<div class='text-justify'>CBS ve uzaktan algılama teknolojileri ile çalışmaktan keyif alıyorum. Öğrenim sürecimde de genel olarak bu alanlara yönelik çalışmalar yaptım. Lisans bitirme tezimde akıllı şehirlerde büyük veri yönetimi üzerine 2 adet çalışma yaptım ve başarıyla sundum. Tez sürecimde yoğun olarak kullandığım veri tabanı yönetim sistemleri SQL Server, PostgreSQL ve MongoDB ile ilgili çalışmalarıma devam etmekteyim. Aynı zaman da Python ve C# ile çalışmalar yapmaktayım.</div>
+<div class='text-justify'>CBS ve uzaktan algılama teknolojileri ile çalışmaktan keyif alıyorum. Öğrenim sürecimde de genel olarak bu alanlara yönelik çalışmalar yaptım. Lisans bitirme tezimde akıllı şehirlerde büyük veri yönetimi üzerine 2 adet çalışma yaptım ve başarıyla sundum. Tez sürecimde yoğun olarak kullandığım veri tabanı yönetim sistemleri SQL Server, PostgreSQL ve MongoDB ile ilgili çalışmalarıma devam etmekteyim. Aynı zaman da Python ve Javascript ile çalışmalar yapmaktayım.</div>
 <br>
 
 # Yayınlar
@@ -26,13 +26,13 @@ Merhaba, ben Muzaffer. Harita Mühendisiyim. 2016 yılında Cibali Lisesi'ni oku
 
 ## Akıllı Şehirlerde Büyük Veri Yönetimi ve Analizi (2022):
 
-* <div class='text-justify'>Teknolojinin gelişimi, yeni ürümlerin ortaya çıkışını tetiklemiş ve farklı ortamlardan veri toplanmaya başlamıştır. 70'li yılların popüler veri tabanı yönetim sistemleri olan ilişkisel veri tabanları farklı formatlarda ve yatay ve dikey olarak hızlı büyüyen 'büyük veri' karşısında yetersiz kalmış ve NoSQL veri tabanı sistemleri ortaya çıkmıştır. NoSQL (Not Only SQL - SQL'den Fazlası) veri tabanı sistemleri farklı ortamlardan ve farklı formatlarda toplanan verileri depolamamıza ve performanslı bir şekilde bu büyük veri kümelerinden faydalı bilgi çıkarmamıza olanak sağlayan sistemlerdir. </div>
+* <div class='text-justify'>Teknolojinin gelişimi, yeni ürünlerin ortaya çıkışını tetiklemiş ve farklı ortamlardan veri toplanmaya başlamıştır. 70'li yılların popüler veri tabanı yönetim sistemleri olan ilişkisel veri tabanları farklı formatlarda ve yatay ve dikey olarak hızlı büyüyen 'büyük veri' karşısında yetersiz kalmış ve NoSQL veri tabanı sistemleri ortaya çıkmıştır. NoSQL (Not Only SQL - SQL'den Fazlası) veri tabanı sistemleri farklı ortamlardan ve farklı formatlarda toplanan verileri depolamamıza ve performanslı bir şekilde bu büyük veri kümelerinden faydalı bilgi çıkarmamıza olanak sağlayan sistemlerdir. </div>
 * <div class='text-justify'> Bu çalışmada, akıllı şehirlerde örnek teknolojiler değerlendirilmiş, coğrafi büyük verinin CBS ile entegrasyonu kapsamında hava izleme istasyonlarından elde edilen anlık sensör ölçme verileri kullanılarak NoSQL veri tabanı ortamı olan MongoDB’ de Hava Kalitesi İndeksi (HKİ) hesaplanmıştır. CBS ortamında hava izleme istasyonlarına yakın olan trafik sensörlerinden elde edilen veriler PostgreSQL ortamında değerlendirilerek ortalama trafik yoğunlukları hesaplanmıştır. Elde edilen sonuçlara göre hava kalitesinin trafik ile ilişkisi belirlenmiş ve uyarıcı gösterge panelleri üretilmiştir. </div>
 
 
 ## [Tapu Sözel Verileri Raporlama: ReporterPDF](https://github.com/muzafferbulut/tapu-sozel-verileri-raporlama) (2022):
 
-* <div class='text-justify'>Günümüzde daha yaşanılabilir kentler inşa etmek için arsa ve arazi düzenlemeleri yapılmaktadır. Bu düzenlemelerin yapım aşamasında mevcut hak ve yükümlülüklerin de yasa ve yönetmeliklere uygun bir şekilde korunması gereklidir. Yapılacak uygulamalarda kullanılmak üzere pdf formatında temin edilen tapu sözel verileri ilgili programın modülüne girilir. Bu uygulama ile tapu sözel verileri Python aracılığıyla manipüle edilmekte ve tüm dosyalardaki ilgili veriler excel formatında dışa aktarılmaktadır. Böylelikle hem zamandan hem de iş gücünden tasarruf sağlanmaktadır.</div>
+* <div class='text-justify'>Günümüzde daha yaşanılabilir kentler inşa etmek için arsa ve arazi düzenlemeleri yapılmaktadır. Bu düzenlemelerin yapım aşamasında mevcut hak ve yükümlülüklerin de yasa ve yönetmeliklere uygun bir şekilde korunması gereklidir. Yapılacak uygulamalarda kullanılmak üzere pdf formatında temin edilen tapu sözel verileri ilgili programın modülüne el ile girilir. Bu uygulama ile tapu sözel verileri Python aracılığıyla manipüle edilmekte ve tüm dosyalardaki ilgili veriler excel formatında dışa aktarılmaktadır. Böylelikle hem zamandan hem de iş gücünden tasarruf sağlanmaktadır.</div>
 
 ## [GISMS](https://www.youtube.com/watch?v=X5vuSjCwULw) (2021):
 

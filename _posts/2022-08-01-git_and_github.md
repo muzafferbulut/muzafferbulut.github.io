@@ -188,6 +188,6 @@ $ git clone repoUrl
   
 <div class='text-justify'> Bu komut verilen adresteki dosyaları mevcut dizine indirecektir. Bu dosyalardan çalışmaya devam edebiliriz. Ancak uzaktaki bir projeye katkı sağlama düşüncesi varsa yani bu dosyalardaki değişiklikleri proje sahibine göndererek çalışmaya katkı vermeyi amaçlıyorsak o zaman projeyi forklamak gereklidir. Projeyi forkladıktan sonra local repo oluşturarak klonlayıp kendi değişikliklerimizi yapabilir incelemesi için tekrar proje sahibine (pull requests açmak) gönderebiliriz. </div><br>
 
-### NOT:
+#### NOT:
 
 <div class='text-justify'>Bu yazının hazırlanmasında Atıl Samancıoğlu hocamın BTK Akademi platformundaki Versiyon Kontrol Sistemleri kursundan yararlanılmıştır. Kendisine teşekkür ederim. </div><br>
