@@ -1,6 +1,6 @@
 ﻿---
 title: PostGIS Sorgu Performansı Artırma Teknikleri
-date: 2022-12-11 21:30:30 +/-TTTT
+date: 2022-12-10 21:30:30 +/-TTTT
 categories: [Veritabanı, PostGIS]
 tags: [postgresql, postgis,spatial database, spatial query performance]
 ---
