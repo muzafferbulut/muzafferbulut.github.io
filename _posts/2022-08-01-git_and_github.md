@@ -1,7 +1,7 @@
 ---
 title: Versiyon Kontrol Sistemleri - Git ve Github
 date: 2022-08-01 21:30:30 +/-TTTT
-categories: [Tutorial, VCS]
+categories: [Tutorial, Git/Github]
 tags: [git, github]
 ---
 

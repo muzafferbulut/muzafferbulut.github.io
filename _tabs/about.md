@@ -5,9 +5,9 @@ order: 4
 ---
 
 <div class='text-justify'>
-Merhaba, ben Muzaffer. Harita Mühendisiyim. 2016 yılında Cibali Lisesi'ni okul birincisi olarak tamamladıktan sonra Gebze Teknik Üniversitesi Harita Mühendisliği Programı'na başladım. 2021 yılında bölüm ikincisi derecesiyle onur öğrencisi olarak mezun oldum.</div>
+Merhaba, ben Muzaffer. Harita Mühendisiyim. 2016 yılında Cibali Lisesi'ni okul birincisi olarak tamamladıktan sonra Gebze Teknik Üniversitesi Harita Mühendisliği Programı'na başladım. 2021 yılında bölüm ikincisi derecesiyle onur öğrencisi olarak mezun oldum. Şu anda Yüksek Lisans eğitimime GTÜ Jeodezi ve Coğrafi Bilgi Teknolojileri bölümünde devam etmekteyim.</div>
 <br>
-<div class='text-justify'>CBS ve uzaktan algılama teknolojileri ile çalışmaktan keyif alıyorum. Öğrenim sürecimde de genel olarak bu alanlara yönelik çalışmalar yaptım. Lisans bitirme tezimde akıllı şehirlerde büyük veri yönetimi üzerine 2 adet çalışma yaptım ve başarıyla sundum. Tez sürecimde yoğun olarak kullandığım veri tabanı yönetim sistemleri SQL Server, PostgreSQL ve MongoDB ile ilgili çalışmalarıma devam etmekteyim. Aynı zaman da Python ve Javascript ile çalışmalar yapmaktayım.</div>
+<div class='text-justify'>CBS ve uzaktan algılama teknolojileri ile çalışmaktan keyif alıyorum. Öğrenim sürecimde de genel olarak bu alanlara yönelik çalışmalar yaptım. Lisans bitirme tezimde akıllı şehirlerde büyük veri yönetimi üzerine 2 adet çalışma yaptım ve başarıyla sundum. Tez sürecimde yoğun olarak kullandığım veri tabanı yönetim sistemleri PostgreSQL ve MongoDB ile ilgili çalışmalarıma devam etmekteyim. Aynı zaman da Python ve Javascript ile çalışmalar yapmaktayım.</div>
 <br>
 
 # Yayınlar
