@@ -1,8 +1,8 @@
 ﻿---
 title: Ubuntu Üzerine PostgreSQL Kurulumu
 date: 2023-02-04 21:30:30 +/-TTTT
-categories: [Veritabanı, PostgreSQL]
-tags: [postgresq, ubuntu,linux, kurulum]
+categories: [PostgreSQL, Kurulum]
+tags: [postgresql, ubuntu,linux, kurulum]
 ---
 
 <div class='text-justify'>

@@ -1,7 +1,7 @@
 ---
 title: Etkin Mekansal Veri Yönetim Aracı - PostGIS
 date: 2022-05-15 21:30:30 +/-TTTT
-categories: [Tutorial, PostGIS]
+categories: [PostgreSQL, PostGIS]
 tags: [postgresql, postgis, spatial database, gis]
 ---
 
