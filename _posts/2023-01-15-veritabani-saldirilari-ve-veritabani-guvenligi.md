@@ -12,7 +12,7 @@ Bilişim teknolojilerinde meydana gelen gelişim hizmetlerin çeşitlenmesine ol
 </div><br>
 
 <div class='text-justify'>
-Gelişen dünyada hizmetlerden ve teknolojiden yararlanabilmek için çoğu zaman kişise bilgilerimizi kullanıyoruz. Dolayısıyla bu durum verilerin etkin bir şekilde korunmasını zorunlu kılmaktadır.
+Gelişen dünyada hizmetlerden ve teknolojiden yararlanabilmek için çoğu zaman kişisel bilgilerimizi kullanıyoruz. Dolayısıyla bu durum verilerin etkin bir şekilde korunmasını zorunlu kılmaktadır.
 </div><br>
 
 
@@ -34,12 +34,12 @@ Bu aşamada sisteme başarılı ve başarısız girişleri log'layan Login Audit
 Sıklıkla başarısız şifre denemesi yapan IP kara listeye alınarak şifre doğru olsa bile veri tabanına girmesine izin vermeyecek bir server trigger yazılarakta brute force saldırılarına karşı önlem alınabilir.
 </div><br>
 
-### <b> 3. SQL Injection </b>
+### <b> 3. SQL Injection Saldırıları </b>
 
 <div class='text-justify'>
-SQL Injection zararlı olmayan SQL cümlelerinin arasına zararlı olacak kodların enjekte edilmesi işlemidir. Brute Force saldırısının aksine burada amaç şifre kırmak değildir. Bu saldırının yapılabilmesi için zaten veri tabanına bir şekilde bağlı olmak gerekmektedir. <br>
+SQL Injection zararlı olmayan SQL cümlelerinin arasına zararlı olacak kodların enjekte edilmesi işlemidir. Brute Force saldırısının aksine burada amaç şifre kırmak değildir. Bu saldırının yapılabilmesi için zaten veri tabanına bir şekilde bağlı olmak gerekmektedir. <br><br>
 
-Örneğin hazırlanan bir programda bulunan bir açık veri tabanına sql cümlesi göndermeye olanak tanıyorsa kötü niyetli kişiler bu açıktan faydalanarak sadece SQL cümleleri kullanarak diske format atabilir. Farklı olarak yine SQL kullanırak zararlı bir yazılım sunucuya yüklenebilir. <br>
+Örneğin hazırlanan bir programda bulunan bir açık veri tabanına sql cümlesi göndermeye olanak tanıyorsa kötü niyetli kişiler bu açıktan faydalanarak sadece SQL cümleleri kullanarak diske format atabilir. Farklı olarak yine SQL kullanırak zararlı bir yazılım sunucuya yüklenebilir. <br><br>
 
 Bir SQL Injection saldırısında genellikle yapılan ilk şey bir kullanıcı eklemektir. Daha sonra bu kullanıcı aracılığıyla sisteme erişip zararlı faaliyetleri gerçekleştirmektir. Bu işlemlerin önüne geçmek için her yeni kullanıcı oluşuturulduğunda ilgili bilgileri mail atan bir server trigger yazılabilir. <br>
 </div><br>
