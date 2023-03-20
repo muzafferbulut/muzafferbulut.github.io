@@ -371,7 +371,7 @@ GROUP BY nyc_neighborhoods.name
 ORDER BY number_of_homicides DESC
 ```
 
-### <b> 8. ÖLÇÜM FONKSİYONLARI </b>
+### <b> 8. Ölçüm Fonksiyonları </b>
 
 <div class='text-justify'>PostGIS veri tabanında depolanan geometri verileri için yine PostGIS fonksiyonları kullanılarak uzunluk, alan, çevre hesabı gibi birçok hesap yapılabilir.</div><br>
 
