@@ -1,6 +1,6 @@
 ---
 title: PostgreSQL View Yapıları
-date: 2023-10-03 09:30:30 +/-TTTT
+date: 2023-03-10 09:30:30 +/-TTTT
 categories: [PostgreSQL, İleri]
 tags: [postgresql, views, gis]
 ---
