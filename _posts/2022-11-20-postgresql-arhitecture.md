@@ -1,7 +1,7 @@
 ﻿---
 title: PostgreSQL Mimarisi
 date: 2022-11-20 21:30:30 +/-TTTT
-categories: [PostgreSQL, Mimari]
+categories: [PostgreSQL, Administration]
 tags: [postgresql, mimari,spatial database, architecture,]
 ---
 

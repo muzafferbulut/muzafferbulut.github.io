@@ -1,7 +1,7 @@
 ﻿---
 title: Ubuntu Üzerine PostgreSQL Kurulumu
 date: 2023-02-04 21:30:30 +/-TTTT
-categories: [PostgreSQL, Kurulum]
+categories: [PostgreSQL, Administration]
 tags: [postgresql, ubuntu,linux, kurulum]
 ---
 
