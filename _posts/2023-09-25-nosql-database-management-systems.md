@@ -51,4 +51,4 @@ Belge tabalı modelde veriler versiyonlanmış belgeler halinde tutulur. Eğer k
 
 <div class='text-justify'>
 Diğer veri tabanı türlerine nazaran daha az kullanılan graf tabanı veri tabanı türleri birbirine bağlı olan verileri yönetme yeteneği öne çıkar. Graf tabanlı veri tabanı sistemleri düğümler ve düğümler birbirine bağlayan kenarlardan oluşur. Düğümler nesneleri, kenarlar ise nesneler arasındaki ilişkileri temsil eder. ACID ilkelerine uyumludur ve hızlı ve kolay ölçeklenebilir yapıdadır. Sosyal medya uygulamaları, en yakın rotayı bulma, içerik yönetimi, güvenlik ve erişim kontrolü gibi uygulama alanlarında kullanılır. Örnek olarak Neo4J, InfoGrid ve InfoGraph verilebilir.
-</div><br>
+</div>
