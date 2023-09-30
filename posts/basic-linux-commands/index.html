@@ -1,0 +1,287 @@
+<!DOCTYPE html><html lang="en" data-mode="light" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover" ><meta name="generator" content="Jekyll v4.3.2" /><meta property="og:title" content="Temel Linux Komutları" /><meta property="og:locale" content="en" /><meta name="description" content="Bilgisayarlarımız çalışmak için işletim sistemlerine ihtiyaç duyar. Günümüzde en çok kullanılan işletim sistemleri Windows, MacOS, Linux ve Android işletim sistemleridir. Bu işletim sistemlerinden Linux&#39;un masaüstü bilgisayarlarda pazar payı %2.5 olsa da bulut ve hosting hizmetlerinde bu oran %90 üzerine çıkmaktadır. Dolayısıyla temel linux komutlarını bilmek önem arz etmektedir." /><meta property="og:description" content="Bilgisayarlarımız çalışmak için işletim sistemlerine ihtiyaç duyar. Günümüzde en çok kullanılan işletim sistemleri Windows, MacOS, Linux ve Android işletim sistemleridir. Bu işletim sistemlerinden Linux&#39;un masaüstü bilgisayarlarda pazar payı %2.5 olsa da bulut ve hosting hizmetlerinde bu oran %90 üzerine çıkmaktadır. Dolayısıyla temel linux komutlarını bilmek önem arz etmektedir." /><link rel="canonical" href="https://muzafferbulut.github.io/posts/basic-linux-commands/" /><meta property="og:url" content="https://muzafferbulut.github.io/posts/basic-linux-commands/" /><meta property="og:site_name" content="Muzaffer Bulut" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2022-10-20T21:30:30+03:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="Temel Linux Komutları" /><meta name="twitter:site" content="@muzaffer_bu" /> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-20T21:30:30+03:00","datePublished":"2022-10-20T21:30:30+03:00","description":"Bilgisayarlarımız çalışmak için işletim sistemlerine ihtiyaç duyar. Günümüzde en çok kullanılan işletim sistemleri Windows, MacOS, Linux ve Android işletim sistemleridir. Bu işletim sistemlerinden Linux&#39;un masaüstü bilgisayarlarda pazar payı %2.5 olsa da bulut ve hosting hizmetlerinde bu oran %90 üzerine çıkmaktadır. Dolayısıyla temel linux komutlarını bilmek önem arz etmektedir.","headline":"Temel Linux Komutları","mainEntityOfPage":{"@type":"WebPage","@id":"https://muzafferbulut.github.io/posts/basic-linux-commands/"},"url":"https://muzafferbulut.github.io/posts/basic-linux-commands/"}</script><title>Temel Linux Komutları | Muzaffer Bulut</title><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/site.webmanifest"><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico"><meta name="apple-mobile-web-app-title" content="Muzaffer Bulut"><meta name="application-name" content="Muzaffer Bulut"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com" ><link rel="dns-prefetch" href="https://fonts.googleapis.com" ><link rel="preconnect" href="https://cdn.jsdelivr.net" ><link rel="dns-prefetch" href="https://cdn.jsdelivr.net" ><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"><link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script><body data-topbar-visible="true"><div id="sidebar" class="d-flex flex-column align-items-end"><div class="profile-wrapper text-center"><div id="avatar"> <a href="/" class="mx-auto"> <img src="/assets/img/favicons/pp.png" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="site-title"> <a href="/">Muzaffer Bulut</a></div><div class="site-subtitle font-italic">GIS & Database Specialist</div></div><ul class="w-100"><li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a><li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a><li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a><li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a><li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a></ul><div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <a href="https://github.com/muzafferbulut" aria-label="github" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github"></i> </a> <a href="https://twitter.com/muzaffer_bu" aria-label="twitter" target="_blank" rel="noopener noreferrer"> <i class="fab fa-twitter"></i> </a> <a href="javascript:location.href = 'mailto:' + ['bulutmuzafferr','gmail.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" > <i class="fas fa-rss"></i> </a></div></div><div id="topbar-wrapper"><div id="topbar" class="container d-flex align-items-center justify-content-between h-100 pl-3 pr-3 pl-md-4 pr-md-4"> <span id="breadcrumb"> <span> <a href="/"> Home </a> </span> <span>Temel Linux Komutları</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..."> </span> <span id="search-cancel" >Cancel</span></div></div><div id="main-wrapper" class="d-flex justify-content-center"><div id="main" class="container pl-xl-4 pr-xl-4"><div class="row"><div id="core-wrapper" class="col-12 col-lg-11 col-xl-9 pr-xl-4"><div class="post pl-1 pr-1 pl-md-2 pr-md-2"><h1 data-toc-skip>Temel Linux Komutları</h1><div class="post-meta text-muted"> <span> Posted <em class="" data-ts="1666290630" data-df="ll" data-toggle="tooltip" data-placement="bottom"> Oct 20, 2022 </em> </span><div class="d-flex justify-content-between"> <span> By <em> <a href="https://twitter.com/muzaffer_bu">Muzaffer Bulut</a> </em> </span><div> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1746 words"> <em>9 min</em> read</span></div></div></div><div class="post-content"><div class="text-justify"> Bilgisayarlarımız çalışmak için işletim sistemlerine ihtiyaç duyar. Günümüzde en çok kullanılan işletim sistemleri Windows, MacOS, Linux ve Android işletim sistemleridir. Bu işletim sistemlerinden Linux'un masaüstü bilgisayarlarda pazar payı %2.5 olsa da bulut ve hosting hizmetlerinde bu oran %90 üzerine çıkmaktadır. Dolayısıyla temel linux komutlarını bilmek önem arz etmektedir.<br /><br /> Linux 1991 yılında Linus Torvalds tarafından geliştirilen, en çok bilinen ve en çok kullanılan açık kaynak kodlu işletim sistemidir. Linux, açık kaynak kodlu olduğu için, kullanıcılar özgürce kaynak kodunu indirip değiştirme, dağıtma ve paylaşma gibi aktiviteler yapabilirler. Bu nedenle, Linux, dünya çapında birçok kullanıcının ve geliştiricinin kullanması ve katkıda bulunmasıyla hızla gelişir ve güncellenir. Linux, birçok farklı cihazda kullanılabilecek şekilde özelleştirilebilir ve ölçeklenebilir bir işletim sistemi olarak kabul edilir.</div><h3 id="-cat--"><span class="mr-2"><b> cat : </b></span><a href="#-cat--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> cat (concatenate) komutu temel olarak bir dosyasının içeriğini görüntülemek için kullanılır. Ayrıca dosya içeriğini filtrelemek ve yeniden yönlendirmek için de kullanılabilir.<br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre><td class="rouge-code"><pre>-- dosyanın içeriğini görüntülemek
+$ cat file.txt
+
+-- dosyaları birleştirmek
+$ cat file1.txt file2.txt &gt; new_file.txt
+
+</pre></table></code></div></div><h3 id="-cd--"><span class="mr-2"><b> cd : </b></span><a href="#-cd--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> cd (change directory) komutu linux ve unix tabanlı işletim sistemlerinde farklı dizinler arasında geçiş yapmaya olanak tanıyan komuttur. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre><td class="rouge-code"><pre>-- dizin değiştirme
+$ cd hedefdizin
+
+-- bir üst dizine gitme
+$ cd ..
+
+-- ana dizine dönme
+$ cd
+
+</pre></table></code></div></div><h3 id="-chmod--"><span class="mr-2"><b> chmod : </b></span><a href="#-chmod--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> chmod (change mod) komutu dosya veya dizinlerin erişim haklarını değiştirmeye olanak tanıyan komuttur. Dosyalar ve dizinler, üç farklı kullanıcı sınıfı tarafından erişilebilir: kullanıcı (owner), grup ve diğer kullanıcılar. "chmod" komutu, bu kullanıcı sınıflarının erişim haklarını değiştirir. Erişim hakları, okuma (r), yazma (w) ve çalıştırma (x) şeklinde belirtilir. chmod komutu, dosya veya dizinlerin erişim haklarını belirlemek için 3 farklı sayı kullanır: 4, 2 ve 1. Bu sayılar, sırasıyla okuma (r), yazma (w) ve çalıştırma (x) haklarını temsil eder. Bu sayılar farklı kombinasyonlar halinde kullanılarak dosyaların ve dizinlerin erişim hakları belirlenir. Örneğin, 7 (rwx) tüm erişim haklarını temsil ederken, 0 (---) tüm erişim haklarını kapatır. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre><td class="rouge-code"><pre>-- Erişim haklarını belirli bir sayısal değere değiştirmek
+$ chmod 755 file.txt
+
+</pre></table></code></div></div><h3 id="-chown--"><span class="mr-2"><b> chown : </b></span><a href="#-chown--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> chown (change owner) komutu dosya ve dizinlerin sahiplerini değiştirmeye olanak tanıyan komuttur. Linux tabanlı işletim sistemlerinde bir dosyanın sahibi o dosyayı oluşturan kullanıcıdır. chown komutu dosya ve dizinlerin sahiplik bilgilerini deiştirmek için yaygın olarak kulanılan komuttur. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>-- dosya veya dizinin sahibini değiştirmek
+$ chown new_user file.txt
+
+-- tüm alt dizinler ve dosyaların sahiplik bilgisini değiştirmek
+$ chown -R new_user:new_group_folder/
+</pre></table></code></div></div><h3 id="-cp--"><span class="mr-2"><b> cp : </b></span><a href="#-cp--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> cp (copy) komutu dosya ve dizinlerin kopyalanmasında kullanılır. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>-- bir dosyayı başka bir dosyaya kopyalamak
+$ cp file1.txt file2.txt
+
+-- bir dosyayı başka bir dizine kopyalamak
+$ cp file.text directory/
+
+-- tüm dosya ve dizinleri bir dizine koyalamak
+$ cp -R source/ target/
+</pre></table></code></div></div><h3 id="-df-"><span class="mr-2"><b> df: </b></span><a href="#-df-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> df (disk free) komutu dosya sisteminin durumu hakkında (özellikle disk kullanımı hakkında) bilgi verir. Komut sayesinde mevcut disk alanının kullanılan ve boş olan kısmını hangi dosya sistemlerinin daha fazla kaynak kullandığı görüntülenebilir. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre>-- okunabilir çıktı için
+$ df -h
+</pre></table></code></div></div><h3 id="-diff--"><span class="mr-2"><b> diff : </b></span><a href="#-diff--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> diff (difference) komutu iki dosya ve dizin arasındaki farklılıkları gösteren komuttur. Bu komut ile değişen dosya ve satırlar ayıklanarak başka bir dosyaya yazılabilir. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>-- iki dosya arasındaki fark
+$ diff file1.txt file2.txt
+
+-- iki dizin arasındaki fark
+$ diff -r dir1/ dir2/
+
+-- farkları bir dosyaya kaydetmek
+$ diff file1.txt file2.txt &gt; difference.txt
+</pre></table></code></div></div><h3 id="-du--"><span class="mr-2"><b> du : </b></span><a href="#-du--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> du (disk usage) komutu parametre olarak aldığı dosya sisteminin disk kullanımı hakkında bilgi verir. Parametre olarak bir dizin almazsa mevcut dizinin disk kullanımı hakknında bilgi verir. Bu bilgiler disk kullanımını etkin bir şekilde yönetmek için yardımcı olur.<br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>-- belirli bir dizinin disk kullanımını görüntülemek
+$ du /home/user/directory
+
+--okunaklı çıktı almak
+$ du -h
+</pre></table></code></div></div><h3 id="-echo--"><span class="mr-2"><b> echo : </b></span><a href="#-echo--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> echo komutu terminal ekranına değişken veya değerleri yazdırmak için kullanılan komuttur. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>-- bir metin yazdırmak
+$ echo "Hello world!"
+
+-- bir değişken değeri yazdırmak
+$ echo $KULLANICI_ADI
+</pre></table></code></div></div><h3 id="-find--"><span class="mr-2"><b> find : </b></span><a href="#-find--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> find komutu belirli bir dizin veya alt dizinlerindeki dosya ve dizinleri aramak için kullanılır. Eğer dosya yolu belirtilmezse işlemler mevcut dizinde gerçekleştirilir. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>-- belirli bir dizinde belirli bir dosya adı ile arama yapmak
+$ find /home/user/directory -name filename
+
+-- boyut kriterli arama yapmak
+$ find /home/user/directory size +1M
+
+-- tarih kriterli arama yapmak
+$ find /home/user/directory -mtime -7
+</pre></table></code></div></div><h3 id="-grep--"><span class="mr-2"><b> grep : </b></span><a href="#-grep--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> grep komutu bir metin dosyası ve çıktı akışındaki belirli bir desene göre eşleşen satırları bulmak için kullanılır. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>-- belirli bir dosyada belirli bir kelimeyi aramak
+$ grep kelime dosya
+
+-- belirli bir dosyada belirli bir desen için düzenli ifade kullanmak
+$ grep 'desen' dosya
+
+-- bir dizindeki tüm dosyalarda belirli bir kelimeyi aramak
+$ grep -r kelime directory/
+</pre></table></code></div></div><h3 id="-head--"><span class="mr-2"><b> head : </b></span><a href="#-head--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> head komutu bir dosyanın ilk birkaç satırını yazdırmak için kullanılır. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>-- belirli bir dosyanın ilk 10 satırını yazdırmak
+$ head file.txt
+
+-- belirli bir dosyanın ilk N satırını yazdırmak
+$ head -n N file.txt
+</pre></table></code></div></div><h3 id="-history--"><span class="mr-2"><b> history : </b></span><a href="#-history--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> history komutu ile sisteme daha önce girilen komutlar listelenebilir. Daha önce girilen bir komutu tekrar çalıştırmak için ! işareti kullanmak yeterlidir. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>-- daha önce girilen son 100 komutu görüntülemek için
+$ history 100
+
+-- geçmişte girilen komutların listesini bir dosyaya kaydetmek için 
+$history &gt; dosya_adı
+
+-- geçmişte girilen komutlarda belirli bir kelimeyi aramak için
+$ history | grep kelime
+</pre></table></code></div></div><h3 id="-hostname--"><span class="mr-2"><b> hostname : </b></span><a href="#-hostname--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> hostname komutu sistemdeki bilgisayar adını (host adını) görüntülemek ve değiştirmek için kullanılır. hostname komutu kullanıldığında, sistemdeki bilgisayar adı (host adı) ekrana yazdırılır. Varsayılan olarak, bu ad, bilgisayarın ilk kurulum sırasında belirlenen isimdir. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>-- sistemdeki bilgisayar adını görüntülemek için
+$ hostname
+
+-- sistemdeki bilgisayar adını değiştirmek için 
+$ hostname yeni_bilgisayar_adı
+</pre></table></code></div></div><h3 id="-jobs--"><span class="mr-2"><b> jobs : </b></span><a href="#-jobs--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> jobs komutu arka planda çalışan işlemleri görüntülemek ve yönetmek için kullanılır. Jobs komutu ile sistemde çalışan işlemler ve işlemlere ilişkin bilgiler ekranda listelenir. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre><td class="rouge-code"><pre>-- arka planda çalışan işlemleri listelemek için
+$ jobs
+
+-- bir işlemi durdurmak için 
+$ kill %&lt;işlem numarası&gt;
+
+--bir işlemi devam ettirmek için: 
+$ fg %&lt;işlem numarası&gt;
+
+-- bir işlemi arka planda devam ettirmek için 
+$ bg %&lt;işlem numarası&gt;
+ 
+</pre></table></code></div></div><h3 id="-kill--"><span class="mr-2"><b> kill : </b></span><a href="#-kill--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> kill komutu belirli bir işlemi sonlandırmak veya sinyal göndermek için kullanılır. kill komutu ile bir işlem PID (Process ID) numarası veya işlem adı kullanılarak sonlandırılabilir. Bu komut, özellikle hata veren veya donanım hatası olan işlemleri sonlandırmak için kullanışlıdır.</div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>$ kill [options] PID
+</pre></table></code></div></div><h3 id="-locate--"><span class="mr-2"><b> locate : </b></span><a href="#-locate--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> locate komutu belirli bir dosya veya dizinin konumunu hızlıca bulmak için kullanılır. <br /> Sıklıkla kullanılan seçenekleri şunlardır:<br /> * "-i" : Büyük-küçük harf duyarlılığını kapatır. * "-l" : Arama sonuçlarının sayısını sınırlandırır. * "-n" : Arama yapmak için kullanılacak veritabanını belirler.</div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>$ locate [options] filename
+</pre></table></code></div></div><h3 id="-ls--"><span class="mr-2"><b> ls : </b></span><a href="#-ls--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> ls komutu bulunduğunuz dizindeki dosya ve dizinleri listelemek için kullanılır. Kullanımı aşağıdaki gibidir. Burada "options", komut için seçeneklerdir ve isteğe bağlıdır. "file" ise listelemek istediğiniz dosya veya dizinin adıdır. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre>-- ls komutu temel kullanımı
+$ ls [options] [file]
+
+-- tüm dosya ve dizinleri listeleme
+$ ls
+
+-- tüm dosya ve dizinleri ayrıntılı listeleme
+$ ls -l
+
+-- gizli dosyaları da listeler
+$ ls -a
+</pre></table></code></div></div><h3 id="-man--"><span class="mr-2"><b> man : </b></span><a href="#-man--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> man (manual) komutu kullanıcılara işletim sistemi hakkında detaylı bilgi verir. Kullanımı aşağıdaki gibidir. <br /> Burada "command", öğrenmek istediğiniz komut veya konunun adıdır. "section" ise, komut veya konunun belgelendirme bölümünü belirtir. Örneğin, "section 1" komutlar için, "section 5" dosya biçimleri için, "section 8" sistem yönetimi için kullanılır. "Section" belirtilmezse, varsayılan olarak "section 1" kullanılır. Örneğin, "man ls" komutu "ls" komutu hakkında ayrıntılı belgelendirme sağlar. Ayrıca, "man 5 passwd" komutu, "passwd" dosya biçimi hakkında belgelendirme sağlar.</div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>$ man [section] command
+</pre></table></code></div></div><h3 id="-mkdir--"><span class="mr-2"><b> mkdir : </b></span><a href="#-mkdir--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> mkdir (make directory) komutu kullanıcıların dizin veya klasör oluşturmasına olanak tanır.</div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre><td class="rouge-code"><pre>-- doc dizini oluşturma
+$ mkdir doc
+
+-- doc dizini altına project dizini oluşturma
+$ mkdir doc/project
+
+-- iki işlemi tek adımda yapma
+$ mkdir -p doc/project
+</pre></table></code></div></div><h3 id="-mv--"><span class="mr-2"><b> mv : </b></span><a href="#-mv--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> mv (move) komutu dosyaları veya dizinleri taşımak veya yeniden adlandırmak için kullanılır. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre><td class="rouge-code"><pre>-- bir dosyayı başka bir dizine taşıma
+$ mv file.txt Documents/
+</pre></table></code></div></div><h3 id="-ping--"><span class="mr-2"><b> ping : </b></span><a href="#-ping--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> ping komutu bilgisayar ağları üzerindeki diğer cihazların bağlantısını test etmek için kullanılan bir araçtır. Bu komut, bir IP adresi veya bir ana bilgisayar adı belirtilerek kullanılır ve ağdaki bir cihaza bir paket gönderir ve o cihazdan bir yanıt alınmasını bekler. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>$ ping [options] host
+</pre></table></code></div></div><h3 id="-pwd--"><span class="mr-2"><b> pwd : </b></span><a href="#-pwd--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> pwd (print working directory) komutu, çalışılan dizinin tam yolunu ekrana yazdırmak için kullanılan bir komuttur. Özellikle uzun ve karmaşık bir dizin yapısı içinde çalışırken, mevcut dizinin tam yolunu hızlı bir şekilde görüntülemek için kullanışlı bir araçtır.</div><h3 id="-rm--"><span class="mr-2"><b> rm : </b></span><a href="#-rm--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> rm (remove) komutu, dosya veya dizinleri silmek için kullanılır. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre><td class="rouge-code"><pre>-- bir dosya silmek
+$ rm myFile.txt
+
+-- bir dizin silmek
+$ rm -r directory
+</pre></table></code></div></div><h3 id="-rmdir--"><span class="mr-2"><b> rmdir : </b></span><a href="#-rmdir--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> rmdir (remove directory) komutu dizinleri silmek için kullanılır. Bu komut sadece boş dizinleri silebilir. Eğer dizin içinde dosya veya alt dizin varsa, "rmdir" komutu çalışmayacaktır.<br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>$ rmdir directory
+</pre></table></code></div></div><h3 id="-tail--"><span class="mr-2"><b> tail : </b></span><a href="#-tail--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> tail komutu bir dosyanın son kısmını görüntülemek için kullanılan bir komuttur. Bu komutla, bir dosyanın en son satırları veya belirli bir sayıda son satırı görüntülenebilir. Genelde büyük dosyaların sonunda meydana gelen hataları veya değişiklikleri izlemek için kullanılır. <br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>$ tail [options] filename
+</pre></table></code></div></div><h3 id="-tar--"><span class="mr-2"><b> tar : </b></span><a href="#-tar--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> tar (Tape Archive) komutu bir arşivleme aracıdır. Bu komut, birden çok dosya veya dizini tek bir arşiv dosyasında toplamanıza ve sıkıştırmanıza olanak tanır. Bazı yaygın "tar" komutu kullanımları şunlardır:<br /></div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre><td class="rouge-code"><pre>-- Arşiv dosyası oluşturma
+$ tar -cvf archive.tar file1 file2 dir1
+
+-- Arşiv dosyasından dosyaların geri çekilmesi
+$ tar -xvf archive.tar
+
+-- Arşiv dosyasının sıkıştırılması (gzip)
+$ tar -czvf archive.tar.gz file1 file2 dir1
+
+-- Sıkıştırılmış bir arşiv dosyasından dosyaların geri çekilmesi
+$ tar -xzvf archive.tar.gz
+</pre></table></code></div></div><h3 id="-top--"><span class="mr-2"><b> top : </b></span><a href="#-top--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> top komutu sistem performansı ve kaynak kullanımı hakkında gerçek zamanlı bilgi sağlayan bir araçtır. Bu komut, işlemci kullanımı, bellek kullanımı, disk girdi/çıktısı kullanımı, işlem öncelikleri, CPU sürelerini ve diğer birçok sistem ölçütlerini izleyebilir. Ayrıca sistem kaynaklarının kullanımını öncelik sırasına göre sıralayarak hangi işlemlerin sistemde en fazla kaynak kullandığını da görüntüleyebilir.</div><h3 id="-touch--"><span class="mr-2"><b> touch : </b></span><a href="#-touch--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> touch komutu var olan dosyaların erişim veya değiştirilme zamanlarını güncellemek veya var olmayan dosyaları oluşturmak için kullanılan bir komuttur.</div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>$ touch [option(s)] file_name(s)
+</pre></table></code></div></div><h3 id="-unzip--"><span class="mr-2"><b> unzip : </b></span><a href="#-unzip--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> unzip komutu sıkıştırılmış ZIP dosyalarını açmak için kullanılan bir komuttur.</div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>$ unzip -q data.zip
+</pre></table></code></div></div><h3 id="-zip--"><span class="mr-2"><b> zip : </b></span><a href="#-zip--" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3><div class="text-justify"> zip komutu bir veya daha fazla dosyayı sıkıştırmak veya arşivlemek için kullanılan bir Linux komutudur.</div><div class="language-plaintext highlighter-rouge"><div class="code-header"> <span data-label-text="Plaintext"><i class="fas fa-code small"></i></span> <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre><td class="rouge-code"><pre>$ zip [options] archive file(s)...
+</pre></table></code></div></div></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/categories/not-defteri/'>Not Defteri</a>, <a href='/categories/linux/'>Linux</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/linux/" class="post-tag no-text-decoration" >linux</a> <a href="/tags/os/" class="post-tag no-text-decoration" >os</a> <a href="/tags/operating-system/" class="post-tag no-text-decoration" >operating system</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> by the author.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Temel%20Linux%20Komutlar%C4%B1%20-%20Muzaffer%20Bulut&url=https%3A%2F%2Fmuzafferbulut.github.io%2Fposts%2Fbasic-linux-commands%2F" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=Temel%20Linux%20Komutlar%C4%B1%20-%20Muzaffer%20Bulut&u=https%3A%2F%2Fmuzafferbulut.github.io%2Fposts%2Fbasic-linux-commands%2F" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://t.me/share/url?url=https%3A%2F%2Fmuzafferbulut.github.io%2Fposts%2Fbasic-linux-commands%2F&text=Temel%20Linux%20Komutlar%C4%B1%20-%20Muzaffer%20Bulut" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmuzafferbulut.github.io%2Fposts%2Fbasic-linux-commands%2F" data-toggle="tooltip" data-placement="top" title="Linkedin" target="_blank" rel="noopener" aria-label="Linkedin"> <i class="fa-fw fab fa-linkedin"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copy link" data-title-succeed="Link copied successfully!"> </i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted"><div class="access"><div id="access-lastmod" class="post"><div class="panel-heading">Recently Updated</div><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/nosql-database-management-systems/">NoSQL Veri Tabanı Yönetim Sistemleri</a><li><a href="/posts/git_and_github/">Versiyon Kontrol Sistemleri - Git ve Github</a><li><a href="/posts/postgresql-installation-on-ubuntu/">Ubuntu Üzerine PostgreSQL Kurulumu</a><li><a href="/posts/postgresql-views/">PostgreSQL View Yapıları</a><li><a href="/posts/postgis_extension/">Etkin Mekansal Veri Yönetim Aracı - PostGIS</a></ul></div><div id="access-tags"><div class="panel-heading">Trending Tags</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/postgresql/">postgresql</a> <a class="post-tag" href="/tags/gis/">gis</a> <a class="post-tag" href="/tags/spatial-database/">spatial database</a> <a class="post-tag" href="/tags/linux/">linux</a> <a class="post-tag" href="/tags/postgis/">postgis</a> <a class="post-tag" href="/tags/views/">views</a> <a class="post-tag" href="/tags/architecture/">architecture</a> <a class="post-tag" href="/tags/brute-force/">brute force</a> <a class="post-tag" href="/tags/collection/">collection</a> <a class="post-tag" href="/tags/database-security/">database security</a></div></div></div><div id="toc-wrapper" class="pl-0 pr-4 mb-5"><div class="panel-heading pl-3 pt-2 mb-2">Contents</div><nav id="toc"></nav></div><script src="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.min.js"></script></div></div><div class="row"><div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 pl-3 pr-3 pr-xl-4 mt-5"><div id="related-posts" class="mb-2 mb-sm-4"><h3 class="pt-2 mb-4 ml-1" data-toc-skip>Further Reading</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/postgresql-installation-on-ubuntu/"><div class="card-body"> <em class="small" data-ts="1675535430" data-df="ll" > Feb 4, 2023 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Ubuntu Üzerine PostgreSQL Kurulumu</h3><div class="text-muted small"><p> PostgreSQL veri tabanı dünyasının en hızlı ve güvenli açık kaynak kodlu veri tabanı yönetim sistemlerinden biridir. Arkasına aldığı açık kaynak kod topluluğunun desteğiyle gelişmeye devam etmekted...</p></div></div></a></div><div class="card"> <a href="/posts/git_and_github/"><div class="card-body"> <em class="small" data-ts="1659378630" data-df="ll" > Aug 1, 2022 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Versiyon Kontrol Sistemleri - Git ve Github</h3><div class="text-muted small"><p> Giriş Yazılım geliştiricilerin ve şirketlerin vazgeçilmez araçlarından biri versiyon kontrol sistemleridir. Versiyon kontrol sistemleri bir dosya ya da dosya kümesindeki değişiklerin takip edil...</p></div></div></a></div><div class="card"> <a href="/posts/database-security/"><div class="card-body"> <em class="small" data-ts="1673807430" data-df="ll" > Jan 15, 2023 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Veri Tabanı Saldırıları ve Veri Tabanı Güvenliği</h3><div class="text-muted small"><p> 1. Giriş Bilişim teknolojilerinde meydana gelen gelişim hizmetlerin çeşitlenmesine olanak tanımıştır. Bu süreçte birçok iş ve uygulama online ortama taşınmış, dijital dönüşüm kapsamında da taşı...</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/git_and_github/" class="btn btn-outline-primary" prompt="Older"><p>Versiyon Kontrol Sistemleri - Git ve Github</p></a> <a href="/posts/postgresql-arhitecture/" class="btn btn-outline-primary" prompt="Newer"><p>PostgreSQL Mimarisi</p></a></div></div></div></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content"><div id="search-hints"><div id="access-tags"><div class="panel-heading">Trending Tags</div><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/postgresql/">postgresql</a> <a class="post-tag" href="/tags/gis/">gis</a> <a class="post-tag" href="/tags/spatial-database/">spatial database</a> <a class="post-tag" href="/tags/linux/">linux</a> <a class="post-tag" href="/tags/postgis/">postgis</a> <a class="post-tag" href="/tags/views/">views</a> <a class="post-tag" href="/tags/architecture/">architecture</a> <a class="post-tag" href="/tags/brute-force/">brute force</a> <a class="post-tag" href="/tags/collection/">collection</a> <a class="post-tag" href="/tags/database-security/">database security</a></div></div></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><footer><div class="container pl-lg-4 pr-lg-4"><div class="d-flex justify-content-between align-items-center text-muted ml-md-3 mr-md-3"><div class="footer-left"><p class="mb-0"> © 2023 <a href="https://twitter.com/muzaffer_bu">Muzaffer Bulut</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span></p></div><div class="footer-right"><p class="mb-0">Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> with <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme.</p></div></div></div></footer><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a><div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-animation="true" data-autohide="false"><div class="toast-header"> <button type="button" class="ml-2 ml-auto close" data-dismiss="toast" aria-label="Close"> <span aria-hidden="true">&times;</span> </button></div><div class="toast-body text-center pt-0"><p class="pl-2 pr-2 mb-3">A new version of content is available.</p><button type="button" class="btn btn-primary" aria-label="Update"> Update </button></div></div><script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No results found.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/en.min.js,npm/dayjs@1/plugin/relativeTime.min.js,npm/dayjs@1/plugin/localizedFormat.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script> <script defer src="/app.js"></script>
